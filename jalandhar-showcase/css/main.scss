@@ -1,0 +1,176 @@
+$colors: (
+    primary: rgb(57, 123, 209),
+    accent: #f1f1f1,
+    non: white,
+    dark: rgb(24, 23, 23),
+    darkenNon: darken(white, 50%),
+    grey: #e2e2e2,
+    dark-grey: #a2a2a2
+);
+$borders: 10px;
+$padding: 15px;
+$desktop: 840px;
+
+@mixin desktop{
+    @media(min-width: #{$desktop}){
+        @content;
+    }
+}
+
+@function getColor($color-name){
+    @return map-get($colors, $color-name)
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat';
+    margin: 0;    
+}
+
+nav{
+    background: getColor(dark);
+    a{
+        text-decoration: none;
+        color: getColor(accent);
+    }
+    a:hover{
+        transition: 0.5 ease-in-out;
+        color: getColor(darkenNon);
+    }
+}
+
+.custom-toggler{
+    .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(212,252,252, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
+}
+
+
+#carouselControls{
+    img{
+        max-height: 400px;
+    }
+    @include desktop{
+        width: 50%;
+    }
+}
+
+.bg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.places, .religious, .streetfoods, .fairs, .personality{
+    h1{
+        font-size: 3em;
+    }
+    padding: $padding;
+}
+
+.info{
+    margin: 1em;
+    padding: 50px;
+    background-color: getColor(accent);
+    border-radius: $borders;
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px -1px rgba(#000, .1);
+  margin-bottom: 1.6%;
+  background: getColor(non);
+  line-height: 1.4;
+  font-family: sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+  &:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);;
+    transition: 0.2s ease-in-out;
+    .photo {
+      transform: scale(1.3);
+    }
+  }
+  .meta {
+    position: relative;
+    z-index: 0;
+    height: 200px;
+  }
+  .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s;
+  }
+  .description {
+    padding: 1rem;
+    background: getColor(non);
+    position: relative;
+    z-index: 1;
+    h1,
+    h2 {
+      font-family: Poppins, sans-serif;
+    }
+    h1 {
+      line-height: 1;
+      margin: 0;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 0.8em;
+      color: getColor(dark-grey);
+      margin-top: 5px;
+    }
+  }
+  p {
+    position: relative;
+    margin: 1rem 0 0;
+    &:first-of-type {
+      margin-top: 1.25rem;
+    }
+  }
+
+
+  @include desktop()  {
+    flex-direction: row;
+    max-width: 700px;
+    .meta {
+      flex-basis: 40%;
+      height: auto;
+    }
+    .description {
+      flex-basis: 60%;
+      &:before {
+        transform: skewX(-3deg);
+        background: getColor(non);
+        width: 30px;
+        position: absolute;
+        left: -10px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+    }
+    &.alt {
+      flex-direction: row-reverse;
+      .description {
+        &:before {
+          left: inherit;
+          right: -10px;
+          transform: skew(3deg)
+        }
+      }
+    }
+  }
+}
