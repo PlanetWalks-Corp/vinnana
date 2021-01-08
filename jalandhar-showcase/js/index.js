@@ -1,4 +1,3 @@
-
 var placesJSON;
 var fairsJSON;
 var personalitiesJSON;

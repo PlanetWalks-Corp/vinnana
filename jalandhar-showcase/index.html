@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Yellowtail&display=swap" rel="stylesheet">  
 </head>
-<body>
+<body onload="create(placesJSON,'places')">
 
     <!-- navigation bar -->
     <nav class="navbar sticky-top navbar-expand-lg nav ">
@@ -81,7 +81,7 @@
     </div>
     <hr class="w-50" >
     <div class="here" id="here">
-      <br>
+      <br><br>
     </div>
     <div class="things" id="things">
       
@@ -308,6 +308,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init({
+        once: true,
         offset: 0,
         duration: 1000
     });
