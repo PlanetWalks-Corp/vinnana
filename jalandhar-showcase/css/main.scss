@@ -37,6 +37,7 @@ nav{
         color: getColor(accent);
     }
     a:hover{
+        cursor: pointer;
         transition: 0.5 ease-in-out;
         color: getColor(darkenNon);
     }

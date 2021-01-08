@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Yellowtail&display=swap" rel="stylesheet">  
 </head>
 <body>
 
@@ -22,17 +23,17 @@
       
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#places">Famous Places </a>
+            <li class="nav-item" onclick="clearAll('places')">
+              <a class="nav-link" href="#here">Famous Places </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#religious">Religious Places</a>
+            <li class="nav-item" onclick="clearAll('religious')">
+              <a class="nav-link" href="#here">Religious Places</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#personality">Famous Personalities </a>
+            <li class="nav-item" onclick="clearAll('personalities')">
+              <a class="nav-link" href="#here">Famous Personalities </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#fairs">Famous Fairs </a>
+            <li class="nav-item" onclick="clearAll('fairs')">
+              <a class="nav-link" href="#here">Famous Fairs </a>
             </li>
           </ul>
         </div>
@@ -79,7 +80,17 @@
         <p id="places">Jalandhar was once ruled by King Arjan Singh. It is believed that the city came to be named Jalandhar for various reasons. Some say that it was named after a demon king named “Jalandhara.” And some say that it derives its name from the Hindi word Jalandhar which means they are inside the water referring to the area lying in between Sutlej and Beas. The entire Jalandhar was a part of the Indus valley civilization.</p>  
     </div>
     <hr class="w-50" >
-    <div class="places" id="places" data-aos="fade-up">
+    <div class="here" id="here">
+      <br>
+    </div>
+    <div class="things" id="things">
+      
+    </div>
+
+
+
+
+    <!-- <div class="places" id="places" data-aos="fade-up">
         <h1>Famous Places</h1>
 
 
@@ -151,7 +162,7 @@
               <div class="photo" style="background-image: url(Images/talhan2.jpg)"></div>            
             </div>
             <div class="description">
-              <h1>Talhan Sahib Gurdwara</h1>
+              <h1>Talhan Sahib Gurudwara</h1>
               <h2>Address: Jalandhar Ludhiana Road Near, Jalandhar Cantt, Talhan, Punjab 144010</h2>
               <p>Shaheed Baba Nihal Singh Gurdwara commonly known as Talhan Sahib Gurdwara is a small shrine which is dedicated to Baba Nihal Singh, a divine person who helped locals in making pulleys for water wells and worked for the betterment of the society. </p>
              </div>
@@ -210,7 +221,7 @@
         <h1>Famous Personalities </h1>
         <div class="site " data-aos="fade-right">
             <div class="meta">
-              <div class="photo" style="background-image: url(https://cricketaddictor.com/wp-content/uploads/2019/07/Harb.jpg);"></div>            
+              <div class="photo" style="background-image: url(Images/harbhajan.jpg);"></div>            
             </div>
             <div class="description">
               <h1>Harbhajan Singh</h1>
@@ -250,7 +261,7 @@
 
         <div class="site " data-aos="fade-right" >
             <div class="meta">
-              <div class="photo" style="background-image: url(https://static.toiimg.com/photo/71240240.cms);"></div>            
+              <div class="photo" style="background-image: url(Images/varun.jpg);"></div>            
             </div>
             <div class="description">
               <h1>Varun Sharma</h1>
@@ -290,16 +301,17 @@
               <p>Shaheedi Jor mela, which is held annually in the memory of Shaheed Baba Nihal Singh. The mela is a big attraction in Jalandhar. An annual Mela is held to mark the death anniversary ("Barsi") of the Shaheed Baba Nihal Singh.  </p> 
             </div>
         </div>
-    </div>
+    </div> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init({
-        offset: 400,
+        offset: 0,
         duration: 1000
     });
-</script>
+    </script>
 </body>
+<script type="text/javascript" src="js/index.js"></script>
 </html>
