@@ -5,23 +5,25 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
 @Getter
-public class FamousThings {
+public class FamousThings implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	Long id;
-	String name;
-	String address;
-	String type;
+	private Long id;
+	private String name;
+	private String address;
+	private String type;
+	private String cityId;
+	private String description;
 
+	@Lob
+	private byte[] image;
 }
