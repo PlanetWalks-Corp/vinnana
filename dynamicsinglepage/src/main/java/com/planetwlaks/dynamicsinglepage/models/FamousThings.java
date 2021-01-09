@@ -1,9 +1,6 @@
 package com.planetwlaks.dynamicsinglepage.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -11,6 +8,7 @@ import java.io.Serializable;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
+@RequiredArgsConstructor
 @Setter
 @Getter
 public class FamousThings implements Serializable {
@@ -21,9 +19,16 @@ public class FamousThings implements Serializable {
 	private String name;
 	private String address;
 	private String type;
-	private String cityId;
+	private Long cityId;
 	private String description;
+	private String image;
 
-	@Lob
-	private byte[] image;
+	public FamousThings(String name, String address, String type, Long cityId, String desc, String image) {
+		this.name = name;
+		this.address = address;
+		this.type = type;
+		this.cityId = cityId;
+		this.description = desc;
+		this.image = image;
+	}
 }
