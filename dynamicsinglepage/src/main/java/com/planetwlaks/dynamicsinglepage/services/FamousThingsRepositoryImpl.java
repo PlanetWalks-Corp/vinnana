@@ -11,11 +11,7 @@ import java.util.List;
 public class FamousThingsRepositoryImpl {
 
 	@Autowired
-	private final FamousThingsRepository famousThingsRepository;
-
-	public FamousThingsRepositoryImpl(FamousThingsRepository famousThingsRepository) {
-		this.famousThingsRepository = famousThingsRepository;
-	}
+	private FamousThingsRepository famousThingsRepository;
 
 	public List<FamousThings> getCityId(Long cityId) {
 		return famousThingsRepository.findByCityId(cityId);

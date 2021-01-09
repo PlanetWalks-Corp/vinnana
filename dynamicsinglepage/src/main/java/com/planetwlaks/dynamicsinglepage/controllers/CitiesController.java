@@ -14,7 +14,7 @@ public class CitiesController {
 	@Autowired
 	private  CitiesRepositoriesImpl citiesRepositories;
 
-	@GetMapping("/")
+	@GetMapping("")
 	public List<Cities> getCities(){
 		return citiesRepositories.getAll();
 	}

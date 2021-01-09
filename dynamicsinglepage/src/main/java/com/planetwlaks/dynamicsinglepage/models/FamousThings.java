@@ -8,7 +8,6 @@ import java.io.Serializable;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@RequiredArgsConstructor
 @Setter
 @Getter
 public class FamousThings implements Serializable {

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
+
 public interface FamousThingsRepository extends CrudRepository<FamousThings, Long> {
 
 	List<FamousThings> findByCityId(Long cityId);
