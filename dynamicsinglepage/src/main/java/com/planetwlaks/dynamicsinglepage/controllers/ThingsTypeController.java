@@ -15,12 +15,12 @@ public class ThingsTypeController {
 	private ThingsTypesRepositoryImpl thingsTypesRepository;
 
 	@GetMapping("")
-	private List<ThingsTypes> getTypes(){
+	public List<ThingsTypes> getTypes(){
 		return thingsTypesRepository.getAll();
 	}
 
 	@PostMapping("/save")
-	private ThingsTypes saveType(@RequestParam("name") String name){
+	public ThingsTypes saveType(@RequestParam("name") String name){
 		ThingsTypes thingsTypes = new ThingsTypes();
 		thingsTypes.setName(name);
 		thingsTypesRepository.create(thingsTypes);
