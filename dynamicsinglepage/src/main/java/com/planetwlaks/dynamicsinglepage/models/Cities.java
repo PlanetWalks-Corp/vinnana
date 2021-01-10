@@ -22,5 +22,5 @@ public class Cities implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long Id;
 	private String cityName;
-
+	private String image;
 }

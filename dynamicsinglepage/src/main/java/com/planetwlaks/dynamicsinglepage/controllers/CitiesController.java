@@ -20,16 +20,19 @@ public class CitiesController {
 	}
 
 	@PostMapping("/save")
-	public void saveCity(@RequestParam("name") String name){
+	public void saveCity(@RequestParam("name") String name,
+	                     @RequestParam("image") String image){
 		Cities city = new Cities();
 		city.setCityName(name);
+		city.setImage(image);
 		citiesRepositories.create(city);
 	}
 
 	@PutMapping("/update")
 	public void updateCity(@RequestParam("id") Long id,
-	                       @RequestParam("name") String name){
-		Cities city = new Cities(id, name);
+	                       @RequestParam("name") String name,
+	                       @RequestParam("image") String image){
+		Cities city = new Cities(id, name, image);
 		citiesRepositories.create(city);
 	}
 }
