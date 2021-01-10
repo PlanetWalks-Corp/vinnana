@@ -20,7 +20,7 @@ public class FamousThingsController {
 	}
 
 	@PostMapping("/save")
-	public String saveThing(@RequestParam("name") String name,
+	public FamousThings saveThing(@RequestParam("name") String name,
 	                        @RequestParam("address") String address,
                             @RequestParam("type") String type,
                             @RequestParam("cityId") Long cityId,
@@ -36,6 +36,6 @@ public class FamousThingsController {
 
 		famousThingsRepository.create(famousThings);
 
-		return "saved Successfully";
+		return famousThings;
 	}
 }
