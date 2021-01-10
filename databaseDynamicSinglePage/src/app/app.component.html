@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <a class="navbar-brand" href="#" id="">PlanetWalks</a>
+
+
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" ></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarToggler">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" (click)="changeFlag(1)">New city</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="changeFlag(2)">New Thing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="changeFlag(3)">New Type</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row" *ngIf="flag == 1">
+    <app-cities></app-cities>
+  </div>
+  <div class="row" *ngIf="flag == 2">
+    <app-famous-things></app-famous-things>
+  </div>
+  <div class="row" *ngIf="flag == 3">
+    <app-things-type></app-things-type>
+  </div>
+
+</div>
