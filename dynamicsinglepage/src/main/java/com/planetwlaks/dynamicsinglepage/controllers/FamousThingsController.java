@@ -3,12 +3,14 @@ package com.planetwlaks.dynamicsinglepage.controllers;
 import com.planetwlaks.dynamicsinglepage.models.FamousThings;
 import com.planetwlaks.dynamicsinglepage.services.FamousThingsRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/famous/things")
+@CrossOrigin("*")
 public class FamousThingsController {
 
 	@Autowired
@@ -19,7 +21,7 @@ public class FamousThingsController {
 		return famousThingsRepository.getCityId(cityId);
 	}
 
-	@PostMapping("/save")
+	@PostMapping(value = "/save", consumes={MediaType.MULTIPART_FORM_DATA_VALUE})
 	public FamousThings saveThing(@RequestParam("name") String name,
 	                        @RequestParam("address") String address,
                             @RequestParam("type") Long type,
