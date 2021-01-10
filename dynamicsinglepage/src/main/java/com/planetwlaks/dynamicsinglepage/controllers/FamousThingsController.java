@@ -22,7 +22,7 @@ public class FamousThingsController {
 	@PostMapping("/save")
 	public FamousThings saveThing(@RequestParam("name") String name,
 	                        @RequestParam("address") String address,
-                            @RequestParam("type") String type,
+                            @RequestParam("type") Long type,
                             @RequestParam("cityId") Long cityId,
                             @RequestParam("description") String desc,
                             @RequestParam("image") String image){
