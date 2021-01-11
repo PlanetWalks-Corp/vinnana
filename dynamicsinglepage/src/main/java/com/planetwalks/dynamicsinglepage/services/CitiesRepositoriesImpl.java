@@ -1,11 +1,12 @@
-package com.planetwlaks.dynamicsinglepage.services;
+package com.planetwalks.dynamicsinglepage.services;
 
-import com.planetwlaks.dynamicsinglepage.models.Cities;
-import com.planetwlaks.dynamicsinglepage.repositories.CitiesRepositories;
+import com.planetwalks.dynamicsinglepage.models.Cities;
+import com.planetwalks.dynamicsinglepage.repositories.CitiesRepositories;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CitiesRepositoriesImpl {
@@ -17,7 +18,12 @@ public class CitiesRepositoriesImpl {
 		return (List<Cities>) citiesRepositories.findAll();
 	}
 
-	public void create(Cities city) {
+	public Cities create(Cities city) {
 		citiesRepositories.save(city);
+		return city;
+	}
+
+	public Optional<Cities> findByCityId(Long cityId){
+		return citiesRepositories.findById(cityId);
 	}
 }
