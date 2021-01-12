@@ -6,11 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'database';
-  flag = 1;
-
-  // tslint:disable-next-line:typedef
-  changeFlag(flag: number) {
-    this.flag = flag;
-  }
+  title = 'adminDynamicSinglePage';
 }
