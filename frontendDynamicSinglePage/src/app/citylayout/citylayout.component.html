@@ -1,0 +1,75 @@
+<!--<button>
+   <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+  <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+</svg>
+</button>
+  <h1> Jaipur</h1>
+-->
+  <div class="row">
+    <div class="col-lg-1 pt-4 pt-lg-0">
+        <button (click)="SendData()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="85%" height="60%" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+          </svg>
+        </button>
+    </div>
+    <div class="col-lg-11 pt-4 pt-lg-0">
+        <h1> Jaipur</h1>
+    </div>
+</div>
+<section id="History">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src={{image_source}} class="img-fluid" alt="historical image">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+                <h3>History</h3>
+                <p class="font-italic">
+                    {{history}}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<h2>Food Points</h2>
+<section >
+    <div >
+    <div class="row" >
+      <div class="mb-4 mt-4 col-lg-4 col-md-6 d-flex align-items-stretch" *ngFor = "let item of FoodPoint">
+        <div class="card">
+          <img src={{image_source}} class="card-img-top" alt="...">
+          <h2>{{item}}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+<h2>Places to visit</h2>
+<section >
+    <div >
+    <div class="row" >
+      <div class="mb-4 mt-4 col-lg-4 col-md-6 d-flex align-items-stretch" *ngFor = "let item of PlacesToVisit">
+        <div class="card">
+          <img src={{image_source}} class="card-img-top" alt="...">
+          <h2>{{item}}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <h2>Famous Personalities</h2>
+  <section >
+      <div >
+      <div class="row" >
+        <div class="mb-4 mt-4 col-lg-4 col-md-6 d-flex align-items-stretch" *ngFor = "let item of FamousPersonalities">
+          <div class="card">
+            <img src={{image_source}} class="card-img-top" alt="...">
+            <h2>{{item}}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>

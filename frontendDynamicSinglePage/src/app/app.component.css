@@ -1,0 +1,16 @@
+#nav-tt{
+	width: 60;
+	display: block;
+	height: 40;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#foot{
+	background-color: #343a40;
+ 	color: white;
+}
+#btn{
+	border: solid 1.25px white; 
+	border-radius: 5px; 
+	color: #ffffff;
+}
