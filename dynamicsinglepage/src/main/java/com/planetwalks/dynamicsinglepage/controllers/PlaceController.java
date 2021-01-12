@@ -5,15 +5,13 @@ import com.planetwalks.dynamicsinglepage.models.Place;
 import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
 import com.planetwalks.dynamicsinglepage.services.PlaceRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
 @RestController
 @RequestMapping("/place")
+@CrossOrigin("*")
 public class PlaceController {
 
 	@Autowired

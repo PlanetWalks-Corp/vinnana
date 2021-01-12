@@ -6,10 +6,7 @@ import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
 import com.planetwalks.dynamicsinglepage.services.PersonRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -17,6 +14,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/person")
+@CrossOrigin("*")
 public class PersonController {
 
 	@Autowired

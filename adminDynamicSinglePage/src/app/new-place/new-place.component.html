@@ -1,0 +1,28 @@
+<h1 class="text-center">New Place</h1>
+<div class="w-100 align-content-center">
+  <div class="form-group row">
+    <label for="placeName">Place Name</label>
+    <input class="form-control" type="text" id="placeName" [(ngModel)]="placeName">
+  </div>
+  <div class="form-group row">
+    <label for="placeType">Type of Place</label>
+    <input class="form-control" type="text" id="placeType" [(ngModel)]="placeType">
+  </div>
+  <div class="form-group row">
+    <label for="address">Address</label>
+    <input class="form-control" type="text" id="address" [(ngModel)]="address">
+  </div>
+  <div class="form-group row">
+    <label for="description">Description</label>
+    <textarea class="form-control"type="text" id="description" [(ngModel)]="description"></textarea>
+  </div>
+  <div class="form-group row">
+    <label for="imageName">Image Name</label>
+    <input class="form-control"type="text" id="imageName" [(ngModel)]="imageName">
+  </div>
+  <div class="form-group row">
+    <label for="cityId">cityId</label>
+    <input class="form-control"type="number" id="cityId" [(ngModel)]="cityId">
+  </div>
+  <button class="btn btn-dark" (click)="saveData()">LogIn</button>
+</div>

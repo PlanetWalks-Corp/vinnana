@@ -5,15 +5,13 @@ import com.planetwalks.dynamicsinglepage.models.Image;
 import com.planetwalks.dynamicsinglepage.services.AlbumRepositoryImpl;
 import com.planetwalks.dynamicsinglepage.services.ImageRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
 @RestController
 @RequestMapping("/image")
+@CrossOrigin("*")
 public class ImageController {
 
 	@Autowired
