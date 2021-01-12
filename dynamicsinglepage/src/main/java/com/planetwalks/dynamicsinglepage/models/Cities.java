@@ -24,6 +24,7 @@ public class Cities implements Serializable {
 	private Long population;
 	private String geoLocation;
 
+
 	@Column(length = 4000)
 	private String history;
 
