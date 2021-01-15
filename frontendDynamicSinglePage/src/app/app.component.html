@@ -30,7 +30,7 @@
     <app-citylist (sendChildId)="ReceivedId($event)"></app-citylist>
   </div>
   <ng-template #ElseBlock>
-    <app-citylayout (MainMenu)="MainMenu($event)"></app-citylayout>
+    <app-citylayout [recCityId]="recCityId" (MainMenu)="MainMenu($event)"></app-citylayout>
   </ng-template>
 
 </div>
