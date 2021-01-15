@@ -10,10 +10,14 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/cities")
 @CrossOrigin("*")
-public class CitiesController {
 
+public class CitiesController {
 	@Autowired
-	private  CitiesRepositoriesImpl citiesRepositories;
+	private final CitiesRepositoriesImpl citiesRepositories;
+
+	public CitiesController(CitiesRepositoriesImpl citiesRepositories) {
+		this.citiesRepositories = citiesRepositories;
+	}
 
 	@GetMapping("")
 	public List<City> getCities(){
