@@ -12,8 +12,7 @@ export class AppComponent {
   ReceivedId(data: number){
   this.recCityId = data;
   }
-  public constructor(private cityinfo: CityinfoService, recCityId: number) {
-    this.recCityId = recCityId;
+  public constructor(private cityinfo: CityinfoService) {
     this.cityinfo.sendData(this.recCityId);
   }
   title = 'test';
@@ -23,3 +22,4 @@ export class AppComponent {
     this.home_menu=data;
   }
 }
+
