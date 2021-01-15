@@ -26,7 +26,7 @@
 
 </div>
 <div class="container">
-  <div *ngIf="home_menu else ElseBlock">
+  <div *ngIf="home_menu ; else ElseBlock">
     <app-citylist></app-citylist>
   </div>
   <ng-template #ElseBlock>

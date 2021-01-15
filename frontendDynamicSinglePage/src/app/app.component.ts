@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'test';
 
-  home_menu=false;
+  home_menu=true;
   MainMenu(data: boolean)
   {
     this.home_menu=data;

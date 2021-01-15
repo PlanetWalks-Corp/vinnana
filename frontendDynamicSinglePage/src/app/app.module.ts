@@ -5,9 +5,14 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
+import {CitylayoutComponent} from './citylayout/citylayout.component';
+import {CitylistComponent} from './citylist/citylist.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CitylayoutComponent,
+    CitylistComponent
   ],
   imports: [
     BrowserModule,
@@ -19,6 +24,6 @@ import {HttpClientModule} from '@angular/common/http';
   providers: [],
   bootstrap: [AppComponent]
 
-  
+
 })
 export class AppModule { }

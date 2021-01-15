@@ -1,76 +1,61 @@
 class Person {
-    PersonId: number;
-    PersonFirstName: string;
-    PersonLastName: string;
-    Dob: string;
-    Image: string[];
-    Description: string;
-    Profession: string;
+    personId: number;
+    personFirstName: string;
+    personLastName: string;
+    dob: Date;
+    imageName: string;
+    description: string;
+    profession: string;
+    age: number;
 
-    constructor(PersonId: number, PersonFirstName: string, PersonLastName: string, Dob: string, Image: string[], Description: string, Profession: string) {
-        this.PersonId = PersonId;
-        this.PersonFirstName = PersonFirstName;
-        this.PersonLastName = PersonLastName;
-        this.Dob = Dob;
-        this.Image = Image;
-        this.Description = Description;
-        this.Profession = Profession;
-    }
+    constructor(personId: number, personFirstName: string, personLastName: string, dob: Date, imageName: string, description: string, profession: string, age: number) { }
 }
 
-class FairsAndFestival {
-    FairId: number;
-    FairName: string;
-    FairType: string;
-    Description: string;
-    Image: string[];
-    constructor(FairId: number, FairName: string, FairType: string, Image: string[], Description: string) {
-        this.FairId = FairId;
-        this.FairName = FairName;
-        this.FairType = FairType;
-        this.Image = Image;
-        this.Description = Description
-    }
+class Fairs {
+    fairId: number;
+    fairName: string;
+    fairType: string;
+    description: string;
+    imageName: string;
+    constructor(fairId: number, fairName: string, fairType: string, imageName: string, description: string) { }
 }
 
 class Places{
-	PlaceId: number;
-	PlaceName: string;
-	Image: string[];
-	PlaceType: string;
-	Description: string;
-	Address: string;
+	placeId: number;
+	placeName: string;
+	imageName: string;
+	placeType: string;
+	description: string;
+	address: string;
 
-	constructor(PlaceId: number, PlaceName: string, Image: string[], Popularity: number, PlaceType: string, Description: string, Address: string){
-		this.PlaceId = PlaceId;
-		this.PlaceName = PlaceName;
-		this.Image = Image;
-		this.PlaceType = PlaceType;
-		this.Description = Description;
-		this.Address = Address;
-	}	
+	constructor(placeId: number, placeName: string, imageName: string, placeType: string, description: string, address: string){}	
 }
 
+class Image{
+	imageId: number;
+	imageName: string;
+
+	constructor(imageId: number, imageName:string)
+}
+class Album{
+	albumId: number;
+	albumName: string;
+	image: Image[];
+
+	constructor(albumId: number, albuName: string, image: Image[]){
+	}
+}
 class City{
-	CityId: number;
-	CityName: string;
-	Population: number;
-	Geolocation: string;
-	History: string;
-	Climate: string;
+	cityId: number;
+	cityName: string;
+	population: number;
+	geoLocation: string;
+	history: string;
+	weatherCondition: string;
 	places: Places[];
 	person: Person[];
-	fairs_and_festivals: FairsAndFestival[];
+	fair: Fairs[];
+	album: Album;
 
-	constructor(CityId: number, CityName: string, Population: number, Geolocation: string, History: string, Climate: string, places: Places[], person: Person[], fairs_and_festivals: FairsAndFestivals[]){
-		this.CityId = CityId;
-		this.CityName = CityName;
-		this.Population = Population;
-		this.Geolocation = Geolocation;
-		this.History = History;
-		this.Climate = Climate;
-		this.places = places;
-		this.person = person;
-		this.fairs_and_festivals = fairs_and_festivals;
-	}
+	constructor(cityId: number, cityName: string, population: number, geolocation: string, history: string, weatherCondition: string, places: Places[], person: Person[], fair: Fairs[], album: Album){}
 }
