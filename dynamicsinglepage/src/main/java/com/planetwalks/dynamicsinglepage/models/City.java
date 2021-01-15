@@ -14,7 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 @Setter
 @Getter
-public class Cities implements Serializable {
+public class City implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -27,16 +27,16 @@ public class Cities implements Serializable {
 	@Column(length = 4000)
 	private String history;
 
-	@OneToMany(targetEntity = Fair.class, cascade = CascadeType.ALL, mappedBy = "cities", fetch = FetchType.LAZY)
+	@OneToMany(targetEntity = Fair.class, cascade = CascadeType.ALL, mappedBy = "city", fetch = FetchType.LAZY)
 	private List<Fair> fairList;
 
-	@OneToMany(targetEntity = Person.class, cascade = CascadeType.ALL, mappedBy = "cities", fetch = FetchType.LAZY)
+	@OneToMany(targetEntity = Person.class, cascade = CascadeType.ALL, mappedBy = "city", fetch = FetchType.LAZY)
 	private List<Person> personList;
 
-	@OneToMany(targetEntity = Place.class, cascade = CascadeType.ALL, mappedBy = "cities", fetch = FetchType.LAZY)
+	@OneToMany(targetEntity = Place.class, cascade = CascadeType.ALL, mappedBy = "city", fetch = FetchType.LAZY)
 	private List<Place> placeList;
 
-	@OneToOne(targetEntity = Album.class, cascade = CascadeType.ALL,mappedBy = "cities", fetch = FetchType.LAZY)
+	@OneToOne(targetEntity = Album.class, cascade = CascadeType.ALL,mappedBy = "city", fetch = FetchType.LAZY)
 	private Album album;
 
 }

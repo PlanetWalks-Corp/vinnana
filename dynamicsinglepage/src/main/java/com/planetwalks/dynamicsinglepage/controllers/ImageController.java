@@ -26,7 +26,7 @@ public class ImageController {
 		Optional<Album> album1= albumRepository.findByAlbumId(albumId);
 		album.setAlbumId(album1.get().getAlbumId());
 		album.setAlbumName(album1.get().getAlbumName());
-		album.setCities(album1.get().getCities());
+		album.setCity(album1.get().getCity());
 
 		Image image = new Image();
 		image.setImageName(imageName);

@@ -1,4 +1,4 @@
-<div class="container form" *ngIf="loggedIn; else elseBlock">
+<div class="container form" *ngIf="!loggedIn; else elseBlock">
   <app-login (loggedIn)="logIn()"></app-login>
 </div>
 

@@ -29,6 +29,6 @@ public class Place implements Serializable {
 
 	@ManyToOne
 	@JsonIgnore
-	private Cities cities;
+	private City city;
 
 }

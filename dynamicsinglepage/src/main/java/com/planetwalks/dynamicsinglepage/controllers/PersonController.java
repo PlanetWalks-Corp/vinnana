@@ -1,6 +1,6 @@
 package com.planetwalks.dynamicsinglepage.controllers;
 
-import com.planetwalks.dynamicsinglepage.models.Cities;
+import com.planetwalks.dynamicsinglepage.models.City;
 import com.planetwalks.dynamicsinglepage.models.Person;
 import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
 import com.planetwalks.dynamicsinglepage.services.PersonRepositoryImpl;
@@ -32,8 +32,8 @@ public class PersonController {
 	                     @RequestParam("dob") @DateTimeFormat(pattern="yyyy-MM-dd") LocalDate dob,
 	                     @RequestParam("cityId") Long cityId){
 
-		Optional<Cities> city = citiesRepositories.findByCityId(cityId);
-		Cities city1 = new Cities();
+		Optional<City> city = citiesRepositories.findByCityId(cityId);
+		City city1 = new City();
 		city1.setCityId(city.get().getCityId());
 		city1.setCityName(city.get().getCityName());
 		city1.setPopulation(city.get().getPopulation());
@@ -57,7 +57,7 @@ public class PersonController {
 		person.setImageName(imageName);
 		person.setDob(dob);
 		person.setAge(age);
-		person.setCities(city1);
+		person.setCity(city1);
 		return personRepository.create(person);
 
 
