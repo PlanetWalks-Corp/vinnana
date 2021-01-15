@@ -80,9 +80,9 @@ export class City{
 	places: Places[];
 	person: Person[];
 	fair: Fairs[];
-	//album: Album;
-//album: Album
-	constructor(cityId: number, cityName: string, population: number, geoLocation: string, history: string, weatherCondition: string, places: Places[], person: Person[], fair: Fairs[]){
+	album: Album;
+
+	constructor(cityId: number, cityName: string, population: number, geoLocation: string, history: string, weatherCondition: string, places: Places[], person: Person[], fair: Fairs[],album: Album){
 	this.cityId = cityId;
 	this.cityName = cityName;
 	this.population = population;
@@ -92,6 +92,6 @@ export class City{
 	this.places = places;
 	this.person = person;
 	this.fair = fair;
-	//this.album = album;
+	this.album = album;
 	}
 }

@@ -7,8 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  recCityId =-1;
+  ReceivedId(data: number){
+  this.recCityId = data;
+  }
   title = 'test';
-
   home_menu=true;
   MainMenu(data: boolean)
   {
