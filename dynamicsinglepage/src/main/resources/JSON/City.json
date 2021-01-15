@@ -5,7 +5,121 @@
     "weatherConditions": "Cold",
     "population":873725,
     "geoLocation": "31° 19' 33.6540'' N and 75° 34' 34.2480'' E",
-    "history": "In ancient time, the district or Kingdom of Jalandhar comprised the whole of the Upper Doabas from the Ravi to the Satluj. According to the Padama Purana, as quoted by General Conningham the country takes its name from the great Daitya King Danava Jalandhara the son of the Ganga by Ocean."
+    "history": "In ancient time, the district or Kingdom of Jalandhar comprised the whole of the Upper Doabas from the Ravi to the Satluj. According to the Padama Purana, as quoted by General Conningham the country takes its name from the great Daitya King Danava Jalandhara the son of the Ganga by Ocean.",
+    "fairList": [
+      {
+        "fairName": "Sodal Mela",
+
+        "fairType": "Religious",
+        "description": "Varun Sharma is an Indian film actor who has starred in commercially successful films including Fukrey, Kis Kisko Pyaar Karoon, Dilwale, Fukrey Returns, and Chhichhore.",
+        "imageName": "sodal-mela"
+      },
+      {
+
+        "fairName": "Nakodar Mela",
+
+        "fairType": "Religious",
+        "description": "The dargah of Baba Murad Shah ji after the death of Sai Laddi Shah Ji was offered to the famous Punjabi singer, Mr. Gurdas Maan Ji who has remained as a sewadaar. Various singers perform at this powerful place and also there is a mela (fair) celebrated regularly in Memory of Baba Murad Shah Ji and Sai Ghulam (Laddi) Shah Ji",
+        "imageName": "nakodar-mela"
+      },
+      {
+
+        "fairName": "Shaheedi Jor mela",
+
+        "fairType": "Religious",
+        "description": "Shaheedi Jor mela, which is held annually in the memory of Shaheed Baba Nihal Singh. The mela is a big attraction in Jalandhar. An annual Mela is held to mark the death anniversary (\"Barsi\") of the Shaheed Baba Nihal Singh.",
+        "imageName": "shaheedi-jor-mela"
+      },
+      {
+
+        "fairName": "Panj Peer Mela",
+
+        "fairType": "Religious",
+        "description": "The Panjpeer (literally: five peers) shrine in Abohar, Punjab, India is a dargah dedicated to the five peers who are said in local legends to have destroyed the ancient city of Abunagar that formerly occupied the place now known as Abohar. The shrine is considered holy by members of various religions.",
+        "imageName": "panj-peer"
+      }
+    ],
+    "placeList": [
+      {
+
+        "placeName": "Science City",
+        "placeType": "Fun City",
+        "address": "Jalandhar Kapurthala Road, Punjab, India 144601",
+        "description": "Science City Kapurthala, otherwise known as Pushpa Gujral Science City is a haven for science enthusiasts established by the Government of Punjab.",
+        "imageName": "science-city"
+      },
+      {
+
+        "placeName": "Wonderland",
+        "placeType": "Fun City",
+        "address": "Jalandhar - Nakodar Rd, Wadala Chowk, After, Jalandhar, Punjab 144001",
+        "description": "Park with family-friendly rides, including a small roller coaster, plus water slides & a wave pool.",
+        "imageName": "wonderland"
+      },
+      {
+
+        "placeName": "Rangla Punjab",
+        "placeType": "Food Place",
+        "address": "Jalandhar - Phagwara Highway, Khajurla, Grand Trunk Rd, Next to Haveli, Jalandhar, Punjab 144001",
+        "description": "Highliting the rich culture of punjab, Rangla punjab is the best place to learn about the culture of punjab and to hang out with family.",
+        "imageName": "rangla-punjab"
+      },
+      {
+
+        "placeName": "Rainak Bazar",
+        "address": "",
+        "placeType": "Shopping Complex",
+        "description": "Rainak Bazaar also known as the wholesale market. One can always find amazing things for cheapest price.",
+        "imageName": "rainak-bazar"
+      },
+      {
+
+        "placeType": "Religious Place",
+        "placeName": "Devi Talab Mandir",
+        "address": "Tanda Rd, Shiv Nagar, Industrial Area, Jalandhar, Punjab 144004",
+        "description": "Devi Talab Mandir or Devi Talab Temple s devoted to Goddess Durga and is believed to be at least 200 years old. Thousands of pilgrims visit the temple every year and is one of the 51 Shakthi pithas in India.",
+        "imageName": "https://www.jagranimages.com/images/newimg/29122019/29_12_2019-devi_talab_temple_19887104.jpg"
+      },
+      {
+
+        "placeType": "Religious Place",
+        "placeName": "Talhan Sahib Gurudwara",
+        "address": "Jalandhar Ludhiana Road Near, Jalandhar Cantt, Talhan, Punjab 144010",
+        "description": "Shaheed Baba Nihal Singh Gurdwara commonly known as Talhan Sahib Gurdwara is a small shrine which is dedicated to Baba Nihal Singh, a divine person who helped locals in making pulleys for water wells and worked for the betterment of the society.",
+        "imageName": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnFJ-PnFWaHe_zLZRt1fVE4IR7wo-2EahpPA&usqp=CAU"
+      },
+      {
+
+        "placeType": "Religious Place",
+        "placeName":"Gurdwara Chhevin Padshahi",
+        "address": "Basti Sheik, Jalandhar City, Punjab, India",
+        "description":"Gurdwara Chhevin Padshahi is an important religious landmark that holds a significant cultural value. The Gurdwara Chhevin Padshahi is built at a place where Guruji address Muslim holy saint popularly known as Sheikh Darvesh.",
+        "imageName":"https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2019/06/Gurdwara-Chhevin-Padshahi1.jpg"
+      },
+      {
+
+        "placeType": "Religious Place",
+        "placeName":"Geeta Mandir",
+        "address": "",
+        "description":"Dedicated to Lord Krishna and Radha, this famous temple in Jalandhar, Punjab that is located near Nikku Park. The main attraction of this temple is the idol of the Radha Krishna that attracts a large number of devotees every year who come to pay their respects.",
+        "imageName":"https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2019/06/Geeta-Mandir1.jpg"
+      },
+      {
+        "placeType": "Religious Place",
+        "placeName":"Dera Baba Murad Shah Ji",
+        "address": "Baba Murad Shah Ji Road, Amardas Colony, Nakodar, Punjab 144040",
+        "description":"Dera Baba Murad Shah Ji is a Sufiyana Darbar located in Nakodar, Jalandhar Punjab, India. The Darbar is a symbol of love and peace where people from all different castes and religions come and pay their respects at this Darbar.",
+        "imageName":"dera-baba-murad-shah-ji"
+      },
+      {
+
+        "placeType": "Religious Place",
+        "placeName":"St. Mary's Cathedral",
+        "address": "59, The Mall Rd, Jalandhar Cantt, Jalandhar, Punjab 144005",
+        "description":"St. Mary's Cathedral in Jalandhar, Punjab, India, is the seat of the bishop of the Roman Catholic Diocese of Jalandhar. The cathedral is located in the Jalandhar Cantonment. The old church at the same site was dedicated to St. Patrick",
+        "imageName":"st-mary's-cathedral"
+      }
+    ]
   },
   {
     "cityId": 2,

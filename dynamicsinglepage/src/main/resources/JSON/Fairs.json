@@ -1,38 +1,3 @@
 [
-  {
-    "fairId": 1,
-    "cityId": 1,
-    "FairName": "Sodal Mela",
-    "address": "",
-    "fairType": "Religious",
-    "description": "Varun Sharma is an Indian film actor who has starred in commercially successful films including Fukrey, Kis Kisko Pyaar Karoon, Dilwale, Fukrey Returns, and Chhichhore.",
-    "imagePath": "sodal-mela"
-  },
-  {
-    "fairId": 2,
-    "cityId": 1,
-    "fairName": "Nakodar Mela",
-    "address": "",
-    "fairType": "Religious",
-    "description": "The dargah of Baba Murad Shah ji after the death of Sai Laddi Shah Ji was offered to the famous Punjabi singer, Mr. Gurdas Maan Ji who has remained as a sewadaar. Various singers perform at this powerful place and also there is a mela (fair) celebrated regularly in Memory of Baba Murad Shah Ji and Sai Ghulam (Laddi) Shah Ji",
-    "imagePath": "nakodar-mela"
-  },
-  {
-    "fairId": 3,
-    "cityId": 1,
-    "fairName": "Shaheedi Jor mela",
-    "address": "",
-    "fairType": "Religious",
-    "description": "Shaheedi Jor mela, which is held annually in the memory of Shaheed Baba Nihal Singh. The mela is a big attraction in Jalandhar. An annual Mela is held to mark the death anniversary (\"Barsi\") of the Shaheed Baba Nihal Singh.",
-    "imagePath": "shaheedi-jor-mela"
-  },
-  {
-    "fairId": 4,
-    "cityId": 3,
-    "fairName": "Panj Peer Mela",
-    "address": "",
-    "fairType": "Religious",
-    "description": "The Panjpeer (literally: five peers) shrine in Abohar, Punjab, India is a dargah dedicated to the five peers who are said in local legends to have destroyed the ancient city of Abunagar that formerly occupied the place now known as Abohar. The shrine is considered holy by members of various religions.",
-    "imagePath": "panj-peer"
-  }
+
 ]

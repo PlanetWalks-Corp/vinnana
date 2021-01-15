@@ -1,8 +1,11 @@
 package com.planetwalks.dynamicsinglepage;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.planetwalks.dynamicsinglepage.models.Cities;
+import com.planetwalks.dynamicsinglepage.models.Fair;
+import com.planetwalks.dynamicsinglepage.repositories.FairRepository;
 import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.planetwalks.dynamicsinglepage.services.FairRepositoryImpl;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -22,7 +25,7 @@ public class DynamicsinglepageApplication extends SpringBootServletInitializer {
 
 	@Autowired
 	CitiesRepositoriesImpl citiesRepositories;
-
+	//FairRepositoryImpl fairRepositories;
 	public static void main(String[] args) {
 		SpringApplication.run(DynamicsinglepageApplication.class, args);
 	}
@@ -31,15 +34,20 @@ public class DynamicsinglepageApplication extends SpringBootServletInitializer {
 		return args -> {
 			ObjectMapper mapper = new ObjectMapper();
 			TypeReference<List<Cities>> typeReference = new TypeReference<List<Cities>>(){} ;
-			InputStream inputStream = TypeReference.class.getResourceAsStream("/json/city.json");
+			//TypeReference<List<Fair>> typeFair = new TypeReference<List<Fair>>() {};
+			InputStream inputStream = TypeReference.class.getResourceAsStream("/JSON/City.json");
 			try {
 				List<Cities> cities = mapper.readValue(inputStream,typeReference);
+				//List<Fair> fair= mapper.readValue(inputStream,typeFair);
 				for(Cities city : cities){
 					citiesRepositories.create((Cities) city);
+//					for(Fair fair1 : fair){
+//						fairRepositories.create((Fair) fair1);
+//					}
 				}
-				System.out.println("Users Saved!");
+				System.out.println("Cities Saved!");
 			} catch (IOException e){
-				System.out.println("Unable to save users: " + e.getMessage());
+				System.out.println("Unable to save Cities: " + e.getMessage());
 			}
 		};
 	}

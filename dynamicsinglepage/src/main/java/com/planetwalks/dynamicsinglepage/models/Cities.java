@@ -1,5 +1,7 @@
 package com.planetwalks.dynamicsinglepage.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,7 +29,6 @@ public class Cities implements Serializable {
 
 	@Column(length = 4000)
 	private String history;
-
 	@OneToMany(targetEntity = Fair.class, cascade = CascadeType.ALL, mappedBy = "cities", fetch = FetchType.LAZY)
 	private List<Fair> fairList;
 
