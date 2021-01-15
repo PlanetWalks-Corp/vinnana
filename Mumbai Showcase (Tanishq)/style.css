@@ -1,0 +1,79 @@
+#nav-tt{
+	width: 60;
+	display: block;
+	height: 40;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+#sec{
+	height: 550px;
+	display: block;
+	margin: 0 auto;
+}
+
+#start{
+	padding-top: 30px;
+	font-family: 'Varela Round', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+}
+#head{
+	padding-top: 20px;
+	font-family: 'Lato', serif;
+	font-weight: 800;
+}
+#cardimgs{
+	object-fit: cover;
+	height:18rem;
+}
+
+.card{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+h4{
+	font-family: 'Varela Round', sans-serif;
+	font-weight: 800;
+}
+
+#para{
+	font-family: 'Varela Round', sans-serif;
+	font-weight: 500;
+	}
+
+#ending{
+	font-family: 'Varela Round', sans-serif;
+	font-weight: 500;
+	padding-top: 20px;
+	font-size: 25px;
+	text-align: right;
+}
+
+h3{
+	font-family: 'Roboto', sans-serif;
+	text-align: left;
+}
+
+#text{
+	text-align: left;
+	font-size: 16px;
+}
+#foot{
+	background-color: #211f1f;
+ 	color:white;
+}
+#btn{
+	border: solid 1.25px white; 
+	border-radius: 5px; 
+	color: #ffffff;
+}
+.accordion{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.accordion-button{
+	font-family: 'Varela Round', sans-serif;
+	font-weight: 600;
+}
