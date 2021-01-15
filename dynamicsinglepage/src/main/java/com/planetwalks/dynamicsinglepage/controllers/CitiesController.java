@@ -1,6 +1,8 @@
 package com.planetwalks.dynamicsinglepage.controllers;
 
+import com.planetwalks.dynamicsinglepage.models.Album;
 import com.planetwalks.dynamicsinglepage.models.City;
+import com.planetwalks.dynamicsinglepage.services.AlbumRepositoryImpl;
 import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +16,8 @@ public class CitiesController {
 
 	@Autowired
 	private  CitiesRepositoriesImpl citiesRepositories;
+	@Autowired
+	private AlbumRepositoryImpl albumRepository;
 
 	@GetMapping("")
 	public List<City> getCities(){
@@ -37,7 +41,33 @@ public class CitiesController {
 		city.setHistory(history);
 		city.setWeatherConditions(weatherCondition);
 		city.setPopulation(population);
-		return citiesRepositories.create(city);
+
+		City res = citiesRepositories.create(city);
+
+		Album album = new Album();
+		album.setAlbumName(cityName);
+		album.setCity(city);
+		Album resAlbum = albumRepository.create(album);
+		System.out.println(resAlbum);
+		return res;
+
+	}
+
+	@PutMapping("/update")
+	public City updateCity(@RequestParam("cityId") Long cityId,
+						 @RequestParam("cityName")String cityName,
+	                     @RequestParam("geoLocation") String geoLocation,
+	                     @RequestParam("history") String history,
+	                     @RequestParam("weatherConditions") String weatherCondition,
+	                     @RequestParam("population") Long population){
+		City city = new City();
+		city.setCityId(cityId);
+		city.setCityName(cityName);
+		city.setGeoLocation(geoLocation);
+		city.setHistory(history);
+		city.setWeatherConditions(weatherCondition);
+		city.setPopulation(population);
+		return citiesRepositories.update(city);
 
 	}
 }

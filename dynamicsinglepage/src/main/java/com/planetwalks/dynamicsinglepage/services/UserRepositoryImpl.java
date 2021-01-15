@@ -20,10 +20,14 @@ public class UserRepositoryImpl {
 	}
 
 	public List<User> getAllUsers() {
-		return (List<User>) userRepository.findAll();
+		return  userRepository.findAll();
 	}
 
-	public Optional<User> findById(Long userId) {
+	public Optional<User> findByUserId(Long userId) {
 		return userRepository.findById(userId);
+	}
+
+	public User findByUsername(String username) {
+		return userRepository.findUserByUsername(username);
 	}
 }

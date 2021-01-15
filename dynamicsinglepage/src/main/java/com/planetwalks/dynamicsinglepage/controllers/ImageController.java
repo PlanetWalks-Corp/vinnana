@@ -33,4 +33,21 @@ public class ImageController {
 		image.setAlbum(album);
 		return imageRepository.create(image);
 	}
+
+	@PutMapping("/update")
+	public Image update(@RequestParam("imageId") Long imageId,
+	                    @RequestParam("imageName") String imageName,
+	                    @RequestParam("albumId") Long albumId){
+		Album album = new Album();
+		Optional<Album> album1= albumRepository.findByAlbumId(albumId);
+		album.setAlbumId(album1.get().getAlbumId());
+		album.setAlbumName(album1.get().getAlbumName());
+		album.setCity(album1.get().getCity());
+
+		Image image = new Image();
+		image.setImageId(imageId);
+		image.setImageName(imageName);
+		image.setAlbum(album);
+		return imageRepository.update(image);
+	}
 }

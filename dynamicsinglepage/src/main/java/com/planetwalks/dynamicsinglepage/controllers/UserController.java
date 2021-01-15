@@ -20,12 +20,17 @@ public class UserController {
 		return userRepository.getAllUsers();
 	}
 
-	@GetMapping("/{id}")
-	public Optional<User> findById(@PathVariable Long id){
-		return userRepository.findById(id);
+	@GetMapping("/id/{userId}")
+	public Optional<User> findById(@PathVariable Long userId){
+		return userRepository.findByUserId(userId);
 	}
 
-	@PostMapping("save")
+	@GetMapping("/username/{username}")
+	public User findByUsername(@PathVariable String username){
+		return userRepository.findByUsername(username);
+	}
+
+	@PostMapping("/save")
 	public User create(@RequestParam("firstName") String firstName,
 	                   @RequestParam("lastName") String lastName,
 	                   @RequestParam("username") String username,

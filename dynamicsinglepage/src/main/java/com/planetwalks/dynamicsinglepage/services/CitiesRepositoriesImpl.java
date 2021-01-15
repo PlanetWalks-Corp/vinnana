@@ -26,4 +26,8 @@ public class CitiesRepositoriesImpl {
 	public Optional<City> findByCityId(Long cityId){
 		return citiesRepositories.findById(cityId);
 	}
+
+	public City update(City city) {
+		return citiesRepositories.save(city);
+	}
 }

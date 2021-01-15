@@ -14,4 +14,8 @@ public class PersonRepositoryImpl {
 	public Person create(Person person) {
 		return personRepository.save(person);
 	}
+
+	public Person update(Person person) {
+		return personRepository.save(person);
+	}
 }

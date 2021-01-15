@@ -45,4 +45,33 @@ public class PlaceController {
 		return placeRepository.create(place);
 
 	}
+
+	@PutMapping("/update")
+	public Place create(@RequestParam("placeId") Long placeId,
+					    @RequestParam("placeName") String placeName,
+	                    @RequestParam("address") String address,
+	                    @RequestParam("imageName") String imageName,
+	                    @RequestParam("description") String descrition,
+	                    @RequestParam("placeType") String placeType,
+	                    @RequestParam("cityId") Long cityId){
+		Optional<City> city = citiesRepositories.findByCityId(cityId);
+		City city1 = new City();
+		city1.setCityId(city.get().getCityId());
+		city1.setCityName(city.get().getCityName());
+		city1.setPopulation(city.get().getPopulation());
+		city1.setHistory(city.get().getHistory());
+		city1.setWeatherConditions(city.get().getWeatherConditions());
+		city1.setGeoLocation((city.get().getGeoLocation()));
+
+		Place place = new Place();
+		place.setPlaceId(placeId);
+		place.setPlaceName(placeName);
+		place.setAddress(address);
+		place.setImageName(imageName);
+		place.setDescription(descrition);
+		place.setPlaceType(placeType);
+		place.setCity(city1);
+		return placeRepository.update(place);
+
+	}
 }

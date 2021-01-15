@@ -16,17 +16,6 @@ export class HttpServicesService {
     this.http.post(url, param).toPromise()
       .then( (data: any) => {
         console.log(data);
-        if (name === 'cities'){
-          const newUrl = `http://localhost:8080/album/save`;
-          const albumParam = new FormData();
-          albumParam.append('albumName', data.cityName);
-          albumParam.append('cityId', data.cityId);
-          this.http.post(newUrl, albumParam).toPromise()
-            // tslint:disable-next-line:no-shadowed-variable
-            .then( ( response: any) => {
-              console.log(response);
-            });
-        }
       });
   }
 }
