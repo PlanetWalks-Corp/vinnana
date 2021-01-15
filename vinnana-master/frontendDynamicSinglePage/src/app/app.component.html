@@ -27,10 +27,10 @@
 </div>
 <div class="container">
   <div *ngIf="home_menu ; else ElseBlock">
-    <app-citylist (sendChildId)="ReceivedId($event)"></app-citylist>
+    <app-citylist></app-citylist>
   </div>
   <ng-template #ElseBlock>
-    <app-citylayout [recCityId]="recCityId" (MainMenu)="MainMenu($event)"></app-citylayout>
+    <app-citylayout (MainMenu)="MainMenu($event)"></app-citylayout>
   </ng-template>
 
 </div>

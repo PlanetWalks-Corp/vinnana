@@ -8,16 +8,12 @@ import {CityinfoService} from 'src/app/cityinfo.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  recCityId: number;
-  ReceivedId(data: number){
-  this.recCityId = data;
-  }
-  public constructor(private cityinfo: CityinfoService, recCityId: number) {
-    this.recCityId = recCityId;
-    this.cityinfo.sendData(this.recCityId);
+ 
+ constructor() {
+    
   }
   title = 'test';
-  home_menu=true;
+  home_menu=false;
   MainMenu(data: boolean)
   {
     this.home_menu=data;
