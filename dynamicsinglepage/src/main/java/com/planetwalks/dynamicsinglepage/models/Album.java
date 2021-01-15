@@ -24,7 +24,7 @@ public class Album implements Serializable {
 
 	@OneToOne
 	@JsonIgnore
-	public Cities cities;
+	public City city;
 
 	@OneToMany(targetEntity = Image.class, cascade = CascadeType.ALL, mappedBy = "album", fetch = FetchType.LAZY)
 	public List<Image> imageList;

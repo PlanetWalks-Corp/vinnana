@@ -1,19 +1,17 @@
 package com.planetwalks.dynamicsinglepage.controllers;
 
-import com.planetwalks.dynamicsinglepage.models.Cities;
+import com.planetwalks.dynamicsinglepage.models.City;
 import com.planetwalks.dynamicsinglepage.models.Place;
 import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
 import com.planetwalks.dynamicsinglepage.services.PlaceRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
 @RestController
 @RequestMapping("/place")
+@CrossOrigin("*")
 public class PlaceController {
 
 	@Autowired
@@ -28,8 +26,8 @@ public class PlaceController {
 	                    @RequestParam("description") String descrition,
 	                    @RequestParam("placeType") String placeType,
 	                    @RequestParam("cityId") Long cityId){
-		Optional<Cities> city = citiesRepositories.findByCityId(cityId);
-		Cities city1 = new Cities();
+		Optional<City> city = citiesRepositories.findByCityId(cityId);
+		City city1 = new City();
 		city1.setCityId(city.get().getCityId());
 		city1.setCityName(city.get().getCityName());
 		city1.setPopulation(city.get().getPopulation());
@@ -43,7 +41,7 @@ public class PlaceController {
 		place.setImageName(imageName);
 		place.setDescription(descrition);
 		place.setPlaceType(placeType);
-		place.setCities(city1);
+		place.setCity(city1);
 		return placeRepository.create(place);
 
 	}

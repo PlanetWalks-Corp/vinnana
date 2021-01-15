@@ -5,15 +5,13 @@ import com.planetwalks.dynamicsinglepage.models.Image;
 import com.planetwalks.dynamicsinglepage.services.AlbumRepositoryImpl;
 import com.planetwalks.dynamicsinglepage.services.ImageRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
 @RestController
 @RequestMapping("/image")
+@CrossOrigin("*")
 public class ImageController {
 
 	@Autowired
@@ -28,7 +26,7 @@ public class ImageController {
 		Optional<Album> album1= albumRepository.findByAlbumId(albumId);
 		album.setAlbumId(album1.get().getAlbumId());
 		album.setAlbumName(album1.get().getAlbumName());
-		album.setCities(album1.get().getCities());
+		album.setCity(album1.get().getCity());
 
 		Image image = new Image();
 		image.setImageName(imageName);

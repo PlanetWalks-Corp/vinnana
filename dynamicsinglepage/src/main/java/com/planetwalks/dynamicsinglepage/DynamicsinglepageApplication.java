@@ -1,6 +1,6 @@
 package com.planetwalks.dynamicsinglepage;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.planetwalks.dynamicsinglepage.models.Cities;
+import com.planetwalks.dynamicsinglepage.models.City;
 import com.planetwalks.dynamicsinglepage.models.Fair;
 import com.planetwalks.dynamicsinglepage.repositories.FairRepository;
 import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
@@ -33,14 +33,14 @@ public class DynamicsinglepageApplication extends SpringBootServletInitializer {
 	CommandLineRunner runner() {
 		return args -> {
 			ObjectMapper mapper = new ObjectMapper();
-			TypeReference<List<Cities>> typeReference = new TypeReference<List<Cities>>(){} ;
+			TypeReference<List<City>> typeReference = new TypeReference<List<City>>(){} ;
 			//TypeReference<List<Fair>> typeFair = new TypeReference<List<Fair>>() {};
 			InputStream inputStream = TypeReference.class.getResourceAsStream("/JSON/City.json");
 			try {
-				List<Cities> cities = mapper.readValue(inputStream,typeReference);
+				List<City> cities = mapper.readValue(inputStream,typeReference);
 				//List<Fair> fair= mapper.readValue(inputStream,typeFair);
-				for(Cities city : cities){
-					citiesRepositories.create((Cities) city);
+				for(City city : cities){
+					citiesRepositories.create((City) city);
 //					for(Fair fair1 : fair){
 //						fairRepositories.create((Fair) fair1);
 //					}

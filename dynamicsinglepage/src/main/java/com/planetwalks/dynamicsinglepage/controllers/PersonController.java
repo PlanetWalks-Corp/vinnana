@@ -1,15 +1,12 @@
 package com.planetwalks.dynamicsinglepage.controllers;
 
-import com.planetwalks.dynamicsinglepage.models.Cities;
+import com.planetwalks.dynamicsinglepage.models.City;
 import com.planetwalks.dynamicsinglepage.models.Person;
 import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
 import com.planetwalks.dynamicsinglepage.services.PersonRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -17,6 +14,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/person")
+@CrossOrigin("*")
 public class PersonController {
 
 	@Autowired
@@ -34,8 +32,8 @@ public class PersonController {
 	                     @RequestParam("dob") @DateTimeFormat(pattern="yyyy-MM-dd") LocalDate dob,
 	                     @RequestParam("cityId") Long cityId){
 
-		Optional<Cities> city = citiesRepositories.findByCityId(cityId);
-		Cities city1 = new Cities();
+		Optional<City> city = citiesRepositories.findByCityId(cityId);
+		City city1 = new City();
 		city1.setCityId(city.get().getCityId());
 		city1.setCityName(city.get().getCityName());
 		city1.setPopulation(city.get().getPopulation());
@@ -59,7 +57,7 @@ public class PersonController {
 		person.setImageName(imageName);
 		person.setDob(dob);
 		person.setAge(age);
-		person.setCities(city1);
+		person.setCity(city1);
 		return personRepository.create(person);
 
 

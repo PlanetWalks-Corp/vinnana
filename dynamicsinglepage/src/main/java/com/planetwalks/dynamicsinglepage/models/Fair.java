@@ -25,5 +25,5 @@ public class Fair implements Serializable {
 
 	@ManyToOne
 	@JsonIgnore
-	private Cities cities;
+	private City city;
 }

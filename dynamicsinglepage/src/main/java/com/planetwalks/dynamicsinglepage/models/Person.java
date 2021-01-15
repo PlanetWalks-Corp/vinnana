@@ -32,5 +32,5 @@ public class Person implements Serializable {
 
 	@ManyToOne
 	@JsonIgnore
-	private Cities cities;
+	private City city;
 }
