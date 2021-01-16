@@ -9,9 +9,18 @@ export class CityinfoService {
   sendData(data: number){
     this.id = data;
   }
-  getInfo(cityid: number){
-    console.log(cityid);
+  getCityInfo(cityid: number){
     const url=`http://localhost:8080/cities/${cityid}`;
+    return this.http.get(url);
+  }
+  getPlaceInfo(cityid: number)
+  {
+    const url=`http://localhost:8080/place`;
+    return this.http.get(url);
+  }
+  getPersonInfo(cityid: number)
+  {
+    const url=`http://localhost:8080/person`;
     return this.http.get(url);
   }
 }
