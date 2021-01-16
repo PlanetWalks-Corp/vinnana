@@ -5,7 +5,6 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
-
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -14,6 +13,7 @@ import java.io.Serializable;
 public class Fair implements Serializable {
 
 	@Id
+
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long fairId;
 	private String fairName;
