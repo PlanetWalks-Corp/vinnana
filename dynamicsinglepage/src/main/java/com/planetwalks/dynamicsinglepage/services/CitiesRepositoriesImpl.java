@@ -18,6 +18,7 @@ public class CitiesRepositoriesImpl {
 		return (List<City>) citiesRepositories.findAll();
 	}
 
+
 	public City create(City city) {
 		citiesRepositories.save(city);
 		return city;
@@ -30,4 +31,9 @@ public class CitiesRepositoriesImpl {
 	public City update(City city) {
 		return citiesRepositories.save(city);
 	}
+
+		public Optional<City> findBySlug(String slug){
+			return citiesRepositories.findBySlug(slug);
+		}
+
 }

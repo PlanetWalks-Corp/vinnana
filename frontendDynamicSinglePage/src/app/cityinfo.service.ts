@@ -10,6 +10,7 @@ export class CityinfoService {
     this.id = data;
   }
   getInfo(cityid: number){
+    console.log(cityid);
     const url=`http://localhost:8080/cities/${cityid}`;
     return this.http.get(url);
   }

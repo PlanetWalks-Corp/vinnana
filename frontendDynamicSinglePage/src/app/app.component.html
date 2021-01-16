@@ -26,12 +26,13 @@
 
 </div>
 <div class="container">
-  <div *ngIf="home_menu ; else ElseBlock">
-    <app-citylist (sendChildId)="ReceivedId($event)"></app-citylist>
-  </div>
-  <ng-template #ElseBlock>
-    <app-citylayout  [recCityId]="recCityId" (MainMenu)="MainMenu($event)"></app-citylayout>
-  </ng-template>
+<!--  <div *ngIf="home_menu ; else ElseBlock">-->
+    <router-outlet></router-outlet>
+<!--    <app-citylist (sendChildId)="ReceivedId($event)"></app-citylist>-->
+<!--  </div>-->
+<!--  <ng-template #ElseBlock>-->
+<!--    <app-citylayout  [recCityId]="recCityId" (MainMenu)="MainMenu($event)"></app-citylayout>-->
+<!--  </ng-template>-->
 
 </div>
 

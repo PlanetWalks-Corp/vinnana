@@ -6,8 +6,8 @@ import com.planetwalks.dynamicsinglepage.services.AlbumRepositoryImpl;
 import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/cities")
@@ -19,8 +19,8 @@ public class CitiesController {
 	@Autowired
 	private AlbumRepositoryImpl albumRepository;
 
-	public CitiesController(CitiesRepositoriesImpl citiesRepositories) {
-		this.citiesRepositories = citiesRepositories;
+	public CitiesController() {
+
 	}
 
 	@GetMapping("")
@@ -29,8 +29,19 @@ public class CitiesController {
 	}
 
 	@GetMapping("/{cityId}")
-	public Optional<City> getCityById(@PathVariable Long cityId){
-		return citiesRepositories.findByCityId(cityId);
+	public City getCityById(@PathVariable String cityId){
+		City city;
+		try{
+
+			Long long_identifier = Long.parseLong(cityId);
+			city = this.citiesRepositories.findByCityId(long_identifier).get();
+		}
+			catch(Exception e){
+			System.out.println("exception caught");
+			city = this.citiesRepositories.findBySlug(cityId).get();
+
+			}
+	return city;
 	}
 
 	@PostMapping("/save")
@@ -41,6 +52,7 @@ public class CitiesController {
 	                     @RequestParam("population") Long population){
 		City city = new City();
 		city.setCityName(cityName);
+        city.setSlug(cityName);
 		city.setGeoLocation(geoLocation);
 		city.setHistory(history);
 		city.setWeatherConditions(weatherCondition);

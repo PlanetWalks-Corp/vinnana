@@ -1,7 +1,5 @@
 package com.planetwalks.dynamicsinglepage.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,6 +20,8 @@ public class City implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long cityId;
 	private String cityName;
+	@Column(name = "slug", length = 32, unique = true, nullable = false)
+	private String slug;
 	private String weatherConditions;
 	private Long population;
 	private String geoLocation;
