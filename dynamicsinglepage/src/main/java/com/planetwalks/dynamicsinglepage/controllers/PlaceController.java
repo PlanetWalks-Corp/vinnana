@@ -3,7 +3,7 @@ package com.planetwalks.dynamicsinglepage.controllers;
 import com.planetwalks.dynamicsinglepage.CloudinaryUploader;
 import com.planetwalks.dynamicsinglepage.models.City;
 import com.planetwalks.dynamicsinglepage.models.Place;
-import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
+import com.planetwalks.dynamicsinglepage.services.CityRepositoryImpl;
 import com.planetwalks.dynamicsinglepage.services.PlaceRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -20,7 +20,7 @@ public class PlaceController {
 	@Autowired
 	private PlaceRepositoryImpl placeRepository;
 	@Autowired
-	private CitiesRepositoriesImpl citiesRepositories;
+	private CityRepositoryImpl citiesRepositories;
 
 	private CloudinaryUploader cloudinaryUploader = new CloudinaryUploader();
 
