@@ -15,17 +15,13 @@ import java.util.Optional;
 
 public class CitiesController {
 	@Autowired
-<<<<<<< HEAD
 	private  CitiesRepositoriesImpl citiesRepositories;
 	@Autowired
 	private AlbumRepositoryImpl albumRepository;
-=======
-	private final CitiesRepositoriesImpl citiesRepositories;
 
 	public CitiesController(CitiesRepositoriesImpl citiesRepositories) {
 		this.citiesRepositories = citiesRepositories;
 	}
->>>>>>> b0f62a90076af857b5045f6ffcc2648def32fc72
 
 	@GetMapping("")
 	public List<City> getCities(){
