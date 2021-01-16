@@ -1,4 +1,4 @@
-<div class="container form" *ngIf="!loggedIn; else elseBlock">
+<div class="container form" *ngIf="loggedIn; else elseBlock">
   <app-login (loggedIn)="logIn()"></app-login>
 </div>
 
@@ -29,22 +29,26 @@
       </ul>
     </div>
   </nav>
+  <div class="container text-center" style="padding: 20px;">
+    <button class="btn btn-primary" (click)="updatePlace()">Update Existing</button>
+    <button class="btn btn-dark" (click)="createPlace()">Create a new</button>
+  </div>
 
-  <div class="container">
+  <div class="container text-center form">
     <div class="row" *ngIf="viewing === 1">
-      <app-new-city></app-new-city>
+      <app-new-city [update]="update"></app-new-city>
     </div>
     <div class="row" *ngIf="viewing === 2">
-      <app-new-fair></app-new-fair>
+      <app-new-fair [update]="update"></app-new-fair>
     </div>
     <div class="row" *ngIf="viewing === 3">
-      <app-new-person></app-new-person>
+      <app-new-person [update]="update"></app-new-person>
     </div>
     <div class="row" *ngIf="viewing === 4">
-      <app-new-place></app-new-place>
+      <app-new-place [update]="update"></app-new-place>
     </div>
     <div class="row" *ngIf="viewing === 5">
-      <app-new-image></app-new-image>
+      <app-new-image [update]="update"></app-new-image>
     </div>
   </div>
 </ng-template>

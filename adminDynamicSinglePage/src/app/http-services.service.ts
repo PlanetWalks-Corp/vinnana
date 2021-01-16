@@ -16,6 +16,21 @@ export class HttpServicesService {
     this.http.post(url, param).toPromise()
       .then( (data: any) => {
         console.log(data);
+        alert('Data Saved Successfully');
+      });
+  }
+
+  // tslint:disable-next-line:typedef
+  update(name: string, param: FormData) {
+    // tslint:disable-next-line:no-shadowed-variable
+    const url = `http://localhost:8080/${name}/update`;
+    this.http.put(url, param).toPromise()
+      .then( (data: any) => {
+        console.log(data);
+        alert('updated Successfully');
+      })
+      .catch(() => {
+        alert('Unable to Update');
       });
   }
 }

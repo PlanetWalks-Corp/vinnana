@@ -1,5 +1,6 @@
 package com.planetwalks.dynamicsinglepage.controllers;
 
+import com.planetwalks.dynamicsinglepage.CloudinaryUploader;
 import com.planetwalks.dynamicsinglepage.models.City;
 import com.planetwalks.dynamicsinglepage.models.Person;
 import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.Optional;
@@ -22,6 +24,8 @@ public class PersonController {
 	@Autowired
 	private CitiesRepositoriesImpl citiesRepositories;
 
+	private CloudinaryUploader cloudinaryUploader = new CloudinaryUploader();
+
 
 	@PostMapping("/save")
 	public Person create(@RequestParam("firstName") String firstName,
@@ -30,7 +34,8 @@ public class PersonController {
 	                     @RequestParam("profession") String profession,
 	                     @RequestParam("imageName") String imageName,
 	                     @RequestParam("dob") @DateTimeFormat(pattern="yyyy-MM-dd") LocalDate dob,
-	                     @RequestParam("cityId") Long cityId){
+	                     @RequestParam("cityId") Long cityId) throws IOException {
+		String imagePath = "Uploads/"+imageName+".jpg";
 
 		Optional<City> city = citiesRepositories.findByCityId(cityId);
 		City city1 = new City();
@@ -54,7 +59,7 @@ public class PersonController {
 		person.setPersonLastName(lastName);
 		person.setDescription(description);
 		person.setProfession(profession);
-		person.setImageName(imageName);
+		person.setImageName(cloudinaryUploader.uploadImage(imagePath));
 		person.setDob(dob);
 		person.setAge(age);
 		person.setCity(city1);
@@ -71,7 +76,8 @@ public class PersonController {
 	                     @RequestParam("profession") String profession,
 	                     @RequestParam("imageName") String imageName,
 	                     @RequestParam("dob") @DateTimeFormat(pattern="yyyy-MM-dd") LocalDate dob,
-	                     @RequestParam("cityId") Long cityId){
+	                     @RequestParam("cityId") Long cityId) throws IOException {
+		String imagePath = "Uploads/"+imageName+".jpg";
 
 		Optional<City> city = citiesRepositories.findByCityId(cityId);
 		City city1 = new City();
@@ -95,7 +101,7 @@ public class PersonController {
 		person.setPersonLastName(lastName);
 		person.setDescription(description);
 		person.setProfession(profession);
-		person.setImageName(imageName);
+		person.setImageName(cloudinaryUploader.uploadImage(imagePath));
 		person.setDob(dob);
 		person.setAge(age);
 		person.setCity(city1);

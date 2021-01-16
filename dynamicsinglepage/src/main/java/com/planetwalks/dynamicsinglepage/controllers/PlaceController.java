@@ -1,5 +1,6 @@
 package com.planetwalks.dynamicsinglepage.controllers;
 
+import com.planetwalks.dynamicsinglepage.CloudinaryUploader;
 import com.planetwalks.dynamicsinglepage.models.City;
 import com.planetwalks.dynamicsinglepage.models.Place;
 import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
@@ -7,6 +8,7 @@ import com.planetwalks.dynamicsinglepage.services.PlaceRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.Optional;
 
 @RestController
@@ -19,13 +21,16 @@ public class PlaceController {
 	@Autowired
 	private CitiesRepositoriesImpl citiesRepositories;
 
+	private CloudinaryUploader cloudinaryUploader = new CloudinaryUploader();
+
 	@PostMapping("/save")
 	public Place create(@RequestParam("placeName") String placeName,
 	                    @RequestParam("address") String address,
 	                    @RequestParam("imageName") String imageName,
 	                    @RequestParam("description") String descrition,
 	                    @RequestParam("placeType") String placeType,
-	                    @RequestParam("cityId") Long cityId){
+	                    @RequestParam("cityId") Long cityId) throws IOException {
+		String imagePath = "Uploads/"+imageName+".jpg";
 		Optional<City> city = citiesRepositories.findByCityId(cityId);
 		City city1 = new City();
 		city1.setCityId(city.get().getCityId());
@@ -38,7 +43,7 @@ public class PlaceController {
 		Place place = new Place();
 		place.setPlaceName(placeName);
 		place.setAddress(address);
-		place.setImageName(imageName);
+		place.setImageName(cloudinaryUploader.uploadImage(imagePath));
 		place.setDescription(descrition);
 		place.setPlaceType(placeType);
 		place.setCity(city1);
@@ -47,13 +52,14 @@ public class PlaceController {
 	}
 
 	@PutMapping("/update")
-	public Place create(@RequestParam("placeId") Long placeId,
+	public Place update(@RequestParam("placeId") Long placeId,
 					    @RequestParam("placeName") String placeName,
 	                    @RequestParam("address") String address,
 	                    @RequestParam("imageName") String imageName,
 	                    @RequestParam("description") String descrition,
 	                    @RequestParam("placeType") String placeType,
-	                    @RequestParam("cityId") Long cityId){
+	                    @RequestParam("cityId") Long cityId) throws IOException {
+		String imagePath = "Uploads/"+imageName+".jpg";
 		Optional<City> city = citiesRepositories.findByCityId(cityId);
 		City city1 = new City();
 		city1.setCityId(city.get().getCityId());
@@ -67,7 +73,7 @@ public class PlaceController {
 		place.setPlaceId(placeId);
 		place.setPlaceName(placeName);
 		place.setAddress(address);
-		place.setImageName(imageName);
+		place.setImageName(cloudinaryUploader.uploadImage(imagePath));
 		place.setDescription(descrition);
 		place.setPlaceType(placeType);
 		place.setCity(city1);

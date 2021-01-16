@@ -1,5 +1,12 @@
-<h1 class="text-center">New Personality</h1>
+<h1 class="text-center" *ngIf="!update; else elseH">New Personality</h1>
+<ng-template #elseH>
+  <h1>Update Personality</h1>
+</ng-template>
 <div class="w-100 align-content-center">
+  <div class="form-group row" *ngIf="update">
+    <label for="personId">Person Id</label>
+    <input class="form-control" type="text" id="personId" [(ngModel)]="personId" required>
+  </div>
   <div class="form-group row">
     <label for="firstName">First Name</label>
     <input class="form-control" type="text" id="firstName" [(ngModel)]="firstName">
@@ -28,5 +35,8 @@
     <label for="cityId">cityId</label>
     <input class="form-control"type="number" id="cityId" [(ngModel)]="cityId">
   </div>
-  <button class="btn btn-dark" (click)="saveData()">LogIn</button>
+  <button class="btn btn-dark w-100" (click)="saveData()" *ngIf="!update; else elseBlock" type="submit">Create new City</button>
+  <ng-template #elseBlock>
+    <button class="btn btn-dark w-100" (click)="updateData()" type="submit">Update City</button>
+  </ng-template>
 </div>
