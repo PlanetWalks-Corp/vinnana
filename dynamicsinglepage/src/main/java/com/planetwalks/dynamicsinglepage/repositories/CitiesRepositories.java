@@ -11,4 +11,5 @@ public interface CitiesRepositories extends JpaRepository<City, Long> {
 
 	@Override
 	Optional<City> findById(Long cityId);
+	Optional<City> findBySlug(String slug);
 }

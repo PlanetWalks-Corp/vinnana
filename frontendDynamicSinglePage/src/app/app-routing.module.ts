@@ -2,14 +2,20 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CitylistComponent } from './citylist/citylist.component';
 import { CitylayoutComponent } from './citylayout/citylayout.component';
+
+
 const routes: Routes = [
   {
     component: CitylistComponent,
-    path: 'citylist'
+    path: ''
+  },
+  {
+    component: CitylistComponent,
+    path: 'cities'
   },
   {
     component: CitylayoutComponent,
-    path: 'citylayout'
+    path: 'cities/:id'
   }
 ];
 

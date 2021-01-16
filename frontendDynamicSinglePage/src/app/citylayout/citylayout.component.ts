@@ -1,5 +1,6 @@
 import { Component, OnInit,Input, Output, EventEmitter } from '@angular/core';
 import {CityinfoService} from '../cityinfo.service';
+import { Router, ActivatedRoute} from '@angular/router';
 import {City} from '../classes';
 
 @Component({
@@ -8,20 +9,21 @@ import {City} from '../classes';
   styleUrls: ['./citylayout.component.css']
 })
 export class CitylayoutComponent implements OnInit {
-  @Input('recCityId') cityid=-1;
+  @Input('recCityId') id: number=-1;
   @Output() MainMenu:EventEmitter<boolean>= new EventEmitter()
-  citi: Array<any> = [];
-   constructor(private cityinfo: CityinfoService) {
-
+  citi: any=-1;
+   constructor(private cityinfo: CityinfoService, private route: ActivatedRoute) {
+     this.route.params.subscribe( params => {this.id = params["id"]});
     }
-  history =this.citi[0].hitory //"The city of Jaipur was founded by King of Amer, Maharaja Sawai Jai Singh II on November 18, 1727.";
+  history = this.citi.history;//"The city of Jaipur was founded by King of Amer, Maharaja Sawai Jai Singh II on November 18, 1727.";
   image_source = "enter image source here";
   FoodPoint=['image1','image2', 'image3','image4'];
   PlacesToVisit = ['image1','image2', 'image3','image4'];
   FamousPersonalities = ['image1','image2', 'image3','image4'];
   ngOnInit(): void {
-  this.cityinfo.getInfo(this.cityid).subscribe((data: any) => {
-        this.citi = data[0];
+  this.cityinfo.getInfo(this.id).subscribe((data: any) => {
+        console.log(data);
+        this.citi = data;
   })
   }
   SendData()

@@ -2,6 +2,7 @@
   {
     "cityId": 1,
     "cityName": "Jalandhar",
+    "slug": "jalandhar",
     "weatherConditions": "Cold",
     "population":873725,
     "geoLocation": "31° 19' 33.6540'' N and 75° 34' 34.2480'' E",
@@ -124,6 +125,7 @@
   {
     "cityId": 2,
     "cityName": "Jaipur",
+    "slug": "jaipur",
     "weatherConditions": "Cold",
     "population":3077725,
     "geoLocation": "26.9124° N, 75.7873° E",
@@ -132,6 +134,7 @@
   {
     "cityId": 3,
     "cityName": "Abohar",
+    "slug": "abohar",
     "weatherConditions": "Cold",
     "population":212000,
     "geoLocation": "30.1469° N, 74.2008° E",
@@ -140,6 +143,7 @@
   {
     "cityId": 4,
     "cityName": "Mumbai",
+    "slug": "mumbai",
     "weatherConditions": "Hot",
     "population":18212000,
     "geoLocation": "19.0760° N, 72.8777° E",

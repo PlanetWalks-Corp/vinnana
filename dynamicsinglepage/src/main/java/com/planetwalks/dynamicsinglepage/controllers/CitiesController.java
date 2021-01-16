@@ -13,10 +13,10 @@ import java.util.Optional;
 
 public class CitiesController {
 	@Autowired
-	private final CitiesRepositoriesImpl citiesRepositories;
+	private CitiesRepositoriesImpl citiesRepositories;
 
-	public CitiesController(CitiesRepositoriesImpl citiesRepositories) {
-		this.citiesRepositories = citiesRepositories;
+	public CitiesController() {
+
 	}
 
 	@GetMapping("")
@@ -25,8 +25,19 @@ public class CitiesController {
 	}
 
 	@GetMapping("/{cityId}")
-	public Optional<City> getCityById(@PathVariable Long cityId){
-		return citiesRepositories.findByCityId(cityId);
+	public City getCityById(@PathVariable String cityId){
+		City city;
+		try{
+
+			Long long_identifier = Long.parseLong(cityId);
+			city = this.citiesRepositories.findByCityId(long_identifier).get();
+		}
+			catch(Exception e){
+			System.out.println("exception caught");
+			city = this.citiesRepositories.findBySlug(cityId).get();
+
+			}
+	return city;
 	}
 
 	@PostMapping("/save")
@@ -42,6 +53,8 @@ public class CitiesController {
 		city.setWeatherConditions(weatherCondition);
 		city.setPopulation(population);
 		return citiesRepositories.create(city);
+
+
 
 	}
 }

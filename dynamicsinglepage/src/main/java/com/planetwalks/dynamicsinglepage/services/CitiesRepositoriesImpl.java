@@ -18,6 +18,7 @@ public class CitiesRepositoriesImpl {
 		return (List<City>) citiesRepositories.findAll();
 	}
 
+
 	public City create(City city) {
 		citiesRepositories.save(city);
 		return city;
@@ -26,4 +27,9 @@ public class CitiesRepositoriesImpl {
 	public Optional<City> findByCityId(Long cityId){
 		return citiesRepositories.findById(cityId);
 	}
+
+		public Optional<City> findBySlug(String slug){
+			return citiesRepositories.findBySlug(slug);
+		}
+
 }
