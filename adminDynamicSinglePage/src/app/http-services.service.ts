@@ -16,17 +16,21 @@ export class HttpServicesService {
     this.http.post(url, param).toPromise()
       .then( (data: any) => {
         console.log(data);
-        if (name === 'cities'){
-          const newUrl = `http://localhost:8080/album/save`;
-          const albumParam = new FormData();
-          albumParam.append('albumName', data.cityName);
-          albumParam.append('cityId', data.cityId);
-          this.http.post(newUrl, albumParam).toPromise()
-            // tslint:disable-next-line:no-shadowed-variable
-            .then( ( response: any) => {
-              console.log(response);
-            });
-        }
+        alert('Data Saved Successfully');
+      });
+  }
+
+  // tslint:disable-next-line:typedef
+  update(name: string, param: FormData) {
+    // tslint:disable-next-line:no-shadowed-variable
+    const url = `http://localhost:8080/${name}/update`;
+    this.http.put(url, param).toPromise()
+      .then( (data: any) => {
+        console.log(data);
+        alert('updated Successfully');
+      })
+      .catch(() => {
+        alert('Unable to Update');
       });
   }
 }

@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'adminDynamicSinglePage';
   loggedIn: boolean;
   viewing = 1;
+  update = false;
 
   // tslint:disable-next-line:typedef
   logIn() {
@@ -18,5 +19,15 @@ export class AppComponent {
   // tslint:disable-next-line:typedef
   change(viewing: number) {
     this.viewing = viewing;
+  }
+
+  // tslint:disable-next-line:typedef
+  updatePlace(){
+    this.update = true;
+  }
+
+  // tslint:disable-next-line:typedef
+  createPlace() {
+    this.update = false;
   }
 }

@@ -14,4 +14,8 @@ public class ImageRepositoryImpl {
 	public Image create(Image image) {
 		return imageRepository.save(image);
 	}
+
+	public Image update(Image image) {
+		return imageRepository.save(image);
+	}
 }

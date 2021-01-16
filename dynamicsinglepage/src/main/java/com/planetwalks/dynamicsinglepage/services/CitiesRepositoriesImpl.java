@@ -28,6 +28,10 @@ public class CitiesRepositoriesImpl {
 		return citiesRepositories.findById(cityId);
 	}
 
+	public City update(City city) {
+		return citiesRepositories.save(city);
+	}
+
 		public Optional<City> findBySlug(String slug){
 			return citiesRepositories.findBySlug(slug);
 		}

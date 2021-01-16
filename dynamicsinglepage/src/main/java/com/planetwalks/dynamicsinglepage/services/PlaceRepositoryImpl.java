@@ -15,4 +15,8 @@ public class PlaceRepositoryImpl {
 	public Place create(Place place) {
 		return placeRepository.save(place);
 	}
+
+	public Place update(Place place) {
+		return placeRepository.save(place);
+	}
 }

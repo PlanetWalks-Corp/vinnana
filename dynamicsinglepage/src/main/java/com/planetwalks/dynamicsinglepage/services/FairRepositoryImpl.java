@@ -15,4 +15,8 @@ public class FairRepositoryImpl {
 	public Fair create(Fair fair) {
 		return fairRepository.save(fair);
 	}
+
+	public Fair update(Fair fair) {
+		return fairRepository.save(fair);
+	}
 }
