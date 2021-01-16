@@ -8,6 +8,7 @@ import com.planetwalks.dynamicsinglepage.services.PersonRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.time.LocalDate;
@@ -32,11 +33,9 @@ public class PersonController {
 	                     @RequestParam("lastName") String lastName,
 	                     @RequestParam("description") String description,
 	                     @RequestParam("profession") String profession,
-	                     @RequestParam("imageName") String imageName,
+	                     @RequestParam("imageName") MultipartFile imageName,
 	                     @RequestParam("dob") @DateTimeFormat(pattern="yyyy-MM-dd") LocalDate dob,
 	                     @RequestParam("cityId") Long cityId) throws IOException {
-		String imagePath = "Uploads/"+imageName+".jpg";
-
 		Optional<City> city = citiesRepositories.findByCityId(cityId);
 		City city1 = new City();
 		city1.setCityId(city.get().getCityId());
@@ -59,7 +58,7 @@ public class PersonController {
 		person.setPersonLastName(lastName);
 		person.setDescription(description);
 		person.setProfession(profession);
-		person.setImageName(cloudinaryUploader.uploadImage(imagePath));
+		person.setImageName(cloudinaryUploader.upload(imageName));
 		person.setDob(dob);
 		person.setAge(age);
 		person.setCity(city1);
@@ -74,11 +73,9 @@ public class PersonController {
 	                     @RequestParam("lastName") String lastName,
 	                     @RequestParam("description") String description,
 	                     @RequestParam("profession") String profession,
-	                     @RequestParam("imageName") String imageName,
+	                     @RequestParam("imageName") MultipartFile imageName,
 	                     @RequestParam("dob") @DateTimeFormat(pattern="yyyy-MM-dd") LocalDate dob,
 	                     @RequestParam("cityId") Long cityId) throws IOException {
-		String imagePath = "Uploads/"+imageName+".jpg";
-
 		Optional<City> city = citiesRepositories.findByCityId(cityId);
 		City city1 = new City();
 		city1.setCityId(city.get().getCityId());
@@ -101,7 +98,7 @@ public class PersonController {
 		person.setPersonLastName(lastName);
 		person.setDescription(description);
 		person.setProfession(profession);
-		person.setImageName(cloudinaryUploader.uploadImage(imagePath));
+		person.setImageName(cloudinaryUploader.upload(imageName));
 		person.setDob(dob);
 		person.setAge(age);
 		person.setCity(city1);

@@ -7,6 +7,7 @@ import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
 import com.planetwalks.dynamicsinglepage.services.FairRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.util.Optional;
@@ -27,9 +28,8 @@ public class FairController {
 	public Fair create(@RequestParam("fairName") String fairName,
 	                   @RequestParam("description") String description,
 	                   @RequestParam("fairType") String fairType,
-	                   @RequestParam("imageName") String imageName,
+	                   @RequestParam("imageName") MultipartFile imageName,
 	                   @RequestParam("cityId") Long cityId) throws IOException {
-		String imagePath = "Uploads/"+imageName+".jpg";
 		Optional<City> city = citiesRepositories.findByCityId(cityId);
 		City city1 = new City();
 		city1.setCityId(city.get().getCityId());
@@ -44,7 +44,7 @@ public class FairController {
 		fair.setFairName(fairName);
 		fair.setDescription(description);
 		fair.setFairType(fairType);
-		fair.setImageName(cloudinaryUploader.uploadImage(imagePath));
+		fair.setImageName(cloudinaryUploader.upload(imageName));
 		fair.setCity(city1);
 		return fairRepository.create(fair);
 
@@ -55,9 +55,8 @@ public class FairController {
 			           @RequestParam("fairName") String fairName,
 	                   @RequestParam("description") String description,
 	                   @RequestParam("fairType") String fairType,
-	                   @RequestParam("imageName") String imageName,
+	                   @RequestParam("imageName") MultipartFile imageName,
 	                   @RequestParam("cityId") Long cityId) throws IOException {
-		String imagePath = "Uploads/"+imageName+".jpg";
 		Optional<City> city = citiesRepositories.findByCityId(cityId);
 		City city1 = new City();
 		city1.setCityId(city.get().getCityId());
@@ -73,7 +72,7 @@ public class FairController {
 		fair.setFairName(fairName);
 		fair.setDescription(description);
 		fair.setFairType(fairType);
-		fair.setImageName(cloudinaryUploader.uploadImage(imagePath));
+		fair.setImageName(cloudinaryUploader.upload(imageName));
 		fair.setCity(city1);
 		return fairRepository.update(fair);
 
