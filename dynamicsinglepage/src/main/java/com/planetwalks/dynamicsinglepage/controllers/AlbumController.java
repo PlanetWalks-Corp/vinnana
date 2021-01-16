@@ -3,7 +3,7 @@ package com.planetwalks.dynamicsinglepage.controllers;
 import com.planetwalks.dynamicsinglepage.models.Album;
 import com.planetwalks.dynamicsinglepage.models.City;
 import com.planetwalks.dynamicsinglepage.services.AlbumRepositoryImpl;
-import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
+import com.planetwalks.dynamicsinglepage.services.CityRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +17,7 @@ public class AlbumController {
 	@Autowired
 	private AlbumRepositoryImpl albumRepository;
 	@Autowired
-	private CitiesRepositoriesImpl citiesRepositories;
+	private CityRepositoryImpl citiesRepositories;
 
 	@PostMapping("/save")
 	public Album create(@RequestParam("albumName") String albumName,

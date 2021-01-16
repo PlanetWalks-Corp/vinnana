@@ -1,7 +1,7 @@
 package com.planetwalks.dynamicsinglepage.controllers;
 
 import com.planetwalks.dynamicsinglepage.models.City;
-import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
+import com.planetwalks.dynamicsinglepage.services.CityRepositoryImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -13,7 +13,7 @@ import static org.mockito.Mockito.when;
 class CityControllerTest {
 
 	@Mock
-	CitiesRepositoriesImpl citiesRepositories;
+	CityRepositoryImpl citiesRepositories;
 
 	City city;
 

@@ -3,7 +3,7 @@ package com.planetwalks.dynamicsinglepage.controllers;
 import com.planetwalks.dynamicsinglepage.CloudinaryUploader;
 import com.planetwalks.dynamicsinglepage.models.City;
 import com.planetwalks.dynamicsinglepage.models.Person;
-import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
+import com.planetwalks.dynamicsinglepage.services.CityRepositoryImpl;
 import com.planetwalks.dynamicsinglepage.services.PersonRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -23,7 +23,7 @@ public class PersonController {
 	@Autowired
 	private PersonRepositoryImpl personRepository;
 	@Autowired
-	private CitiesRepositoriesImpl citiesRepositories;
+	private CityRepositoryImpl citiesRepositories;
 
 	private CloudinaryUploader cloudinaryUploader = new CloudinaryUploader();
 
