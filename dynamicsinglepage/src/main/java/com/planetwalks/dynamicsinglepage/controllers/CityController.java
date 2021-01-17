@@ -3,7 +3,7 @@ package com.planetwalks.dynamicsinglepage.controllers;
 import com.planetwalks.dynamicsinglepage.models.Album;
 import com.planetwalks.dynamicsinglepage.models.City;
 import com.planetwalks.dynamicsinglepage.services.AlbumRepositoryImpl;
-import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
+import com.planetwalks.dynamicsinglepage.services.CityRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,19 +13,19 @@ import java.util.List;
 @RequestMapping("/cities")
 @CrossOrigin("*")
 
-public class CitiesController {
+public class CityController {
 	@Autowired
-	private  CitiesRepositoriesImpl citiesRepositories;
+	private CityRepositoryImpl cityRepository;
 	@Autowired
 	private AlbumRepositoryImpl albumRepository;
 
-	public CitiesController() {
+	public CityController() {
 
 	}
 
 	@GetMapping("")
 	public List<City> getCities(){
-		return citiesRepositories.getAll();
+		return cityRepository.getAll();
 	}
 
 	@GetMapping("/{cityId}")
@@ -34,11 +34,11 @@ public class CitiesController {
 		try{
 
 			Long long_identifier = Long.parseLong(cityId);
-			city = this.citiesRepositories.findByCityId(long_identifier).get();
+			city = this.cityRepository.findByCityId(long_identifier).get();
 		}
 			catch(Exception e){
 			System.out.println("exception caught");
-			city = this.citiesRepositories.findBySlug(cityId).get();
+			city = this.cityRepository.findBySlug(cityId).get();
 
 			}
 	return city;
@@ -58,7 +58,7 @@ public class CitiesController {
 		city.setWeatherConditions(weatherCondition);
 		city.setPopulation(population);
 
-		City res = citiesRepositories.create(city);
+		City res = cityRepository.create(city);
 
 		Album album = new Album();
 		album.setAlbumName(cityName);
@@ -83,7 +83,7 @@ public class CitiesController {
 		city.setHistory(history);
 		city.setWeatherConditions(weatherCondition);
 		city.setPopulation(population);
-		return citiesRepositories.update(city);
+		return cityRepository.update(city);
 
 	}
 }

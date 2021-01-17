@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {CityinfoService} from 'src/app/cityinfo.service';
-
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import {CityinfoService} from 'src/app/cityinfo.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public constructor(private cityinfo: CityinfoService) {
+  public constructor(private cityinfo: CityinfoService, private router: Router,) {
     this.cityinfo.sendData(this.recCityId);
   }
   recCityId = -1;
@@ -22,6 +22,10 @@ export class AppComponent {
   MainMenu(data: boolean)
   {
     this.home_menu = data;
+  }
+  SendData()
+  {
+    this.router.navigate(['cities']);
   }
 }
 

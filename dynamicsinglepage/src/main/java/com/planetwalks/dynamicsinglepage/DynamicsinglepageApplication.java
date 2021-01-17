@@ -3,7 +3,7 @@ package com.planetwalks.dynamicsinglepage;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.planetwalks.dynamicsinglepage.models.City;
-import com.planetwalks.dynamicsinglepage.services.CitiesRepositoriesImpl;
+import com.planetwalks.dynamicsinglepage.services.CityRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -19,7 +19,7 @@ import java.util.List;
 public class DynamicsinglepageApplication extends SpringBootServletInitializer {
 
     @Autowired
-    CitiesRepositoriesImpl citiesRepositories;
+    CityRepositoryImpl citiesRepositories;
 
     //FairRepositoryImpl fairRepositories;
     public static void main(String[] args) {

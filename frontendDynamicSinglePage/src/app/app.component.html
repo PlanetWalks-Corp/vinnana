@@ -10,22 +10,19 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
+        <a class="nav-link" (click)="SendData()">Home</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="#foot">About us</a>
       </li>
     </ul>
   </div>
 </nav>
 
-<div class="container mt-4 mb-4">
-  <div class="input-group flex-nowrap">
-    <input type="text" class="form-control" placeholder="City" aria-label="City" aria-describedby="addon-wrapping">
-    <div class="btn-group" role="group" aria-label="Basic example">
-      <button type="button" class="btn btn-primary">Search</button>
-    </div>
-  </div>
 
-</div>
-<div class="container">
+
+
+
 <!--  <div *ngIf="home_menu ; else ElseBlock">-->
     <router-outlet></router-outlet>
 <!--    <app-citylist (sendChildId)="ReceivedId($event)"></app-citylist>-->
@@ -34,7 +31,7 @@
 <!--    <app-citylayout  [recCityId]="recCityId" (MainMenu)="MainMenu($event)"></app-citylayout>-->
 <!--  </ng-template>-->
 
-</div>
+
 
 
 <footer class="page-footer special-color-dark mt-3" id="foot">
