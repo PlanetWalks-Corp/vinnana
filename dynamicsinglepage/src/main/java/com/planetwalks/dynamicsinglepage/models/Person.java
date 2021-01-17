@@ -10,6 +10,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.Date;
 
 @Entity
 @AllArgsConstructor
@@ -31,7 +32,7 @@ public class Person implements Serializable {
 	private String imageName;
 
 	@JsonFormat(pattern = "yyyy-MM-dd")
-	private LocalDate dob;
+	private Date dob;
 
 	@ManyToOne
 	@JsonIgnore
