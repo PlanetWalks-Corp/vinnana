@@ -20,22 +20,13 @@ export class CitylayoutComponent implements OnInit {
     }
   history = this.citi.history;//"The city of Jaipur was founded by King of Amer, Maharaja Sawai Jai Singh II on November 18, 1727.";
   image_source = 'https://res.cloudinary.com/ksush/image/upload/v1610801552/deviTalab_dzxpmf.jpg';
-  FoodPoint=this.place.description;
+  FoodPoint=this.citi.placeList && this.citi.placeList.filter((place:any)=>{place.type==="Food Place"});
   PlacesToVisit = ['image1','image2', 'image3','image4'];
-  FamousPersonalities = ['image1','image2', 'image3','image4'];
+  FamousPersonalities = this.citi.personList;
   ngOnInit(): void {
   this.cityinfo.getCityInfo(this.id).subscribe((data: any) => {
         this.citi = data;
   })
-
-  this.cityinfo.getPlaceInfo(this.id).subscribe((data: any) => {
-    console.log(data);
-    this.place = data;
-})
-
-this.cityinfo.getPersonInfo(this.id).subscribe((data: any) => {
-  this.person = data;
-})
   }
 
 
