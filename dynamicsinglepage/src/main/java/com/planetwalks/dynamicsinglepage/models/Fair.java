@@ -16,7 +16,6 @@ import java.io.Serializable;
 public class Fair implements Serializable {
 
 	@Id
-
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long fairId;
 	private String fairName;
