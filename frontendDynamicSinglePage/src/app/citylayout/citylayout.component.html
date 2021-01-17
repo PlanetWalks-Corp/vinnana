@@ -54,10 +54,10 @@
 
 <h2 id="head">Food Points</h2>
 		<div class="row">
-			<div class="col-lg-4 col-md-12 my-5" *ngFor = "let item of FoodPoint">
+			<div class="col-lg-4 col-md-12 my-5" *ngFor = "let item of foodPoint">
 				<div class="card">
 					<div class="view overlay  z-depth-1-half">
-					<img src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Gateway-of-India-1.jpg" id="cardimgs" class="card-img-top img-fluid">	
+					<img src="{{item.imageName }}" onerror="this.src='https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Gateway-of-India-1.jpg'" id="cardimgs"  class="card-img-top img-fluid">	
 					<div class="mask rgba-white-slight"></div>
 					</div>
 					<div class="card-body" id="para">
@@ -72,15 +72,15 @@
 
       <h2 id="head">Places to Visit</h2>
       <div class="row">
-        <div class="col-lg-4 col-md-12 my-5" *ngFor = "let item of PlacesToVisit">
+        <div class="col-lg-4 col-md-12 my-5" *ngFor = "let item of placesToVisit">
           <div class="card">
             <div class="view overlay  z-depth-1-half">
-            <img src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Gateway-of-India-1.jpg" id="cardimgs" class="card-img-top img-fluid">	
+            <img src="{{item.imageName }}" id="cardimgs" onerror="this.src='https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Gateway-of-India-1.jpg'" class="card-img-top img-fluid">	
             <div class="mask rgba-white-slight"></div>
             </div>
             <div class="card-body" id="para">
-              <h4 >{{item}}</h4>
-              <p>It is one of the best place to visit in Mumbai, was built in 1924 by George Willet to honor the visit of King George V and Queen Mary to Mumbai. Visit this place early morning or late evening hours to enjoy the cool breeze of the sea sans the crowd.
+              <h4 >{{item.placeName}}</h4>
+              <p>{{item.description}}
               </p>
             </div>
           </div>
