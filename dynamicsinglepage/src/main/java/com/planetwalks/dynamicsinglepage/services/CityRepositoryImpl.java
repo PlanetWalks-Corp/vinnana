@@ -1,7 +1,9 @@
 package com.planetwalks.dynamicsinglepage.services;
 
 import com.planetwalks.dynamicsinglepage.models.City;
+import com.planetwalks.dynamicsinglepage.models.Place;
 import com.planetwalks.dynamicsinglepage.repositories.CityRepository;
+import com.planetwalks.dynamicsinglepage.repositories.PlaceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,14 +16,29 @@ public class CityRepositoryImpl {
 	@Autowired
 	private CityRepository cityRepository;
 
+	@Autowired
+	private PlaceRepository placeRepository;
+
 	public List<City> getAll() {
 		return (List<City>) cityRepository.findAll();
 	}
 
 
 	public City create(City city) {
-		cityRepository.save(city);
-		return city;
+		City savedInstance = cityRepository.findOneBySlug(city.getSlug()).get();
+		if(savedInstance == null){
+			savedInstance = cityRepository.save(city);
+		}
+		if(city.getPlaceList() != null) {
+			for(Place place : city.getPlaceList()) {
+//				Place savedPlace = placeRepository.findPlaceByPlaceNameAndCity(place.getPlaceName(), savedInstance).get();
+//				if(savedPlace == null) {
+					place.setCity(savedInstance);
+					placeRepository.save(place);
+				//}
+			}
+		}
+		 return savedInstance;
 	}
 
 	public Optional<City> findByCityId(Long cityId){
