@@ -1,0 +1,396 @@
+[
+  {
+    "cityName": "Jalandhar",
+    "weatherConditions": "Cold",
+    "population":873725,
+    "geoLocation": "31° 19' 33.6540'' N and 75° 34' 34.2480'' E",
+    "history": "In ancient time, the district or Kingdom of Jalandhar comprised the whole of the Upper Doabas from the Ravi to the Satluj. According to the Padama Purana, as quoted by General Conningham the country takes its name from the great Daitya King Danava Jalandhara the son of the Ganga by Ocean.",
+    "fairList": [
+      {
+        "fairName": "Sodal Mela",
+        "fairType": "Religious",
+        "description": "Varun Sharma is an Indian film actor who has starred in commercially successful films including Fukrey, Kis Kisko Pyaar Karoon, Dilwale, Fukrey Returns, and Chhichhore.",
+        "imageName": "https://res.cloudinary.com/ksush/image/upload/v1610778080/aksz1rmnyxvqrrz27jkb.jpg"
+      },
+      {
+        "fairName": "Nakodar Mela",
+        "fairType": "Religious",
+        "description": "The dargah of Baba Murad Shah ji after the death of Sai Laddi Shah Ji was offered to the famous Punjabi singer, Mr. Gurdas Maan Ji who has remained as a sewadaar. Various singers perform at this powerful place and also there is a mela (fair) celebrated regularly in Memory of Baba Murad Shah Ji and Sai Ghulam (Laddi) Shah Ji",
+        "imageName": "nakodar-mela"
+      },
+      {
+        "fairName": "Shaheedi Jor mela",
+        "fairType": "Religious",
+        "description": "Shaheedi Jor mela, which is held annually in the memory of Shaheed Baba Nihal Singh. The mela is a big attraction in Jalandhar. An annual Mela is held to mark the death anniversary (\"Barsi\") of the Shaheed Baba Nihal Singh.",
+        "imageName": "shaheedi-jor-mela"
+      }
+    ],
+    "personList":[
+    {
+      "personFirstName": "Harbhajan ",
+      "personLastName": "Singh",
+      "dob": "1980-07-03",
+      "age":0,
+      "profession": "Crickter",
+      "description": "Harbhajan Singh Plaha, commonly known as Harbhajan or simply Bhajji or Bhajju Pa, is an Indian cricketer, who has played all formats of cricket for India.  specialist spin bowler, he has the second-highest number of Test wickets by an off spinner",
+      "imageName": "harbhajan-singh"
+    },
+    {
+
+      "personFirstName": "Rannvijay",
+      "personLastName": "Singha",
+      "dob": "1980-07-03",
+      "age": 0,
+      "profession": "Crickter",
+      "description": "Rannvijay Singh Singha is an Indian actor, television personality and VJ. Rannvijay is known for his appearance in MTV Roadies, where he won the show.He has been part of the show from 2004 to 2019 and continues to do so",
+      "imageName": "https://static.toiimg.com/photo/msid-73221945/73221945.jpg?329460"
+    },
+    {
+      "personFirstName": "The Great ",
+      "personLastName": "Khali",
+      "dob": "1980-07-03",
+      "age": 0,
+      "profession": "Wrestler",
+      "description": "Dalip Singh Rana, better known by the ring name The Great Khali, is an Indian-born American professional wrestler, promoter, model, and actor who is best known for his work in WWE.",
+      "imageName": "theGreat-khali"
+    },
+    {
+      "personFirstName": "Ranvir",
+      "personLastName": "Shorey",
+      "dob": "1980-07-03",
+      "age": 0,
+      "profession": "Actor",
+      "description": "Ranvir Shorey is an Indian actor and former VJ. Since making his debut in Ek Chhotisi Love Story, he has starred in a number of high-profile films such as Jism and Lakshya",
+      "imageName": "ranvir-shorey"
+    },
+    {
+      "personFirstName": "Varun",
+      "personLastName": "Sharma",
+      "dob": "1980-07-03",
+      "age": 0,
+      "profession": "Actor",
+      "description": "Varun Sharma is an Indian film actor who has starred in commercially successful films including Fukrey, Kis Kisko Pyaar Karoon, Dilwale, Fukrey Returns, and Chhichhore.",
+      "imageName": "varun-sharma"
+    }
+    ],
+    "placeList": [
+      {
+        "placeName": "Science City",
+        "placeType": "Fun City",
+        "address": "Jalandhar Kapurthala Road, Punjab, India 144601",
+        "description": "Science City Kapurthala, otherwise known as Pushpa Gujral Science City is a haven for science enthusiasts established by the Government of Punjab.",
+        "imageName": "science-city"
+      },
+      {
+        "placeName": "Wonderland",
+        "placeType": "Fun City",
+        "address": "Jalandhar - Nakodar Rd, Wadala Chowk, After, Jalandhar, Punjab 144001",
+        "description": "Park with family-friendly rides, including a small roller coaster, plus water slides & a wave pool.",
+        "imageName": "wonderland"
+      },
+      {
+        "placeName": "Rangla Punjab",
+        "placeType": "Food Place",
+        "address": "Jalandhar - Phagwara Highway, Khajurla, Grand Trunk Rd, Next to Haveli, Jalandhar, Punjab 144001",
+        "description": "Highliting the rich culture of punjab, Rangla punjab is the best place to learn about the culture of punjab and to hang out with family.",
+        "imageName": "rangla-punjab"
+      },
+      {
+        "placeName": "Rainak Bazar",
+        "address": "",
+        "placeType": "Shopping Complex",
+        "description": "Rainak Bazaar also known as the wholesale market. One can always find amazing things for cheapest price.",
+        "imageName": "rainak-bazar"
+      },
+      {
+        "placeType": "Religious Place",
+        "placeName": "Devi Talab Mandir",
+        "address": "Tanda Rd, Shiv Nagar, Industrial Area, Jalandhar, Punjab 144004",
+        "description": "Devi Talab Mandir or Devi Talab Temple s devoted to Goddess Durga and is believed to be at least 200 years old. Thousands of pilgrims visit the temple every year and is one of the 51 Shakthi pithas in India.",
+        "imageName": "https://res.cloudinary.com/ksush/image/upload/v1610801552/deviTalab_dzxpmf.jpg"
+      },
+      {
+        "placeType": "Religious Place",
+        "placeName": "Talhan Sahib Gurudwara",
+        "address": "Jalandhar Ludhiana Road Near, Jalandhar Cantt, Talhan, Punjab 144010",
+        "description": "Shaheed Baba Nihal Singh Gurdwara commonly known as Talhan Sahib Gurdwara is a small shrine which is dedicated to Baba Nihal Singh, a divine person who helped locals in making pulleys for water wells and worked for the betterment of the society.",
+        "imageName": "https://res.cloudinary.com/ksush/image/upload/v1610801743/talhan_dccfxl.jpg"
+      },
+      {
+        "placeType": "Religious Place",
+        "placeName":"Gurdwara Chhevin Padshahi",
+        "address": "Basti Sheik, Jalandhar City, Punjab, India",
+        "description":"Gurdwara Chhevin Padshahi is an important religious landmark that holds a significant cultural value. The Gurdwara Chhevin Padshahi is built at a place where Guruji address Muslim holy saint popularly known as Sheikh Darvesh.",
+        "imageName":"https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2019/06/Gurdwara-Chhevin-Padshahi1.jpg"
+      },
+      {
+        "placeType": "Religious Place",
+        "placeName":"Geeta Mandir",
+        "address": "",
+        "description":"Dedicated to Lord Krishna and Radha, this famous temple in Jalandhar, Punjab that is located near Nikku Park. The main attraction of this temple is the idol of the Radha Krishna that attracts a large number of devotees every year who come to pay their respects.",
+        "imageName":"https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2019/06/Geeta-Mandir1.jpg"
+      },
+      {
+        "placeType": "Religious Place",
+        "placeName":"Dera Baba Murad Shah Ji",
+        "address": "Baba Murad Shah Ji Road, Amardas Colony, Nakodar, Punjab 144040",
+        "description":"Dera Baba Murad Shah Ji is a Sufiyana Darbar located in Nakodar, Jalandhar Punjab, India. The Darbar is a symbol of love and peace where people from all different castes and religions come and pay their respects at this Darbar.",
+        "imageName":"dera-baba-murad-shah-ji"
+      },
+      {
+
+        "placeType": "Religious Place",
+        "placeName":"St. Mary's Cathedral",
+        "address": "59, The Mall Rd, Jalandhar Cantt, Jalandhar, Punjab 144005",
+        "description":"St. Mary's Cathedral in Jalandhar, Punjab, India, is the seat of the bishop of the Roman Catholic Diocese of Jalandhar. The cathedral is located in the Jalandhar Cantonment. The old church at the same site was dedicated to St. Patrick",
+        "imageName":"st-mary's-cathedral"
+      }
+    ]
+  },
+  {
+    "cityName": "Jaipur",
+    "weatherConditions": "Cold",
+    "population":3077725,
+    "geoLocation": "26.9124° N, 75.7873° E",
+    "history": "Jaipur, the capital of Rajasthan state in India, was founded in 1727 by Maharaj Jai Singh II,[1] who ruled Jaipur State from 1699–1744. Initially, his capital was Amber, which lies at a distance of 11 km ferest while designing this city of victory. He consulted several books on architecture and architects before making the layout of Jaipur.",
+    "placeList": [
+      {
+        "placeType": "Historical Place",
+        "placeName":"City Palace",
+        "address": "Tulsi Marg, Gangori Bazaar, J.D.A. Market, Pink City, Jaipur, Rajasthan 302002",
+        "description":"City Palace has stood at the heart of the Old City of Jaipur for nearly three centuries, shortly after Maharaja Sawai Jai Singh II decided to relocate his court from the city of Amber. Protected by huge guard walls, the fairy-tale-like structure is still the home of Jaipur's modern-day royal family, and is more extravagant and enchanting than you might imagine. City Palace is more than a sand-colored regal abode—it's a sprawling complex of buildings built around a series of landscaped garden courtyards overlooking Jaipur and Lake Palace. The entire property is a stunning display of Rajasthani and Mughal architecture.",
+        "imageName":"city-plalce"
+      },
+      {
+        "placeType": "Historical Place",
+        "placeName":"Jantar Mantar",
+        "address": "Gangori Bazaar, J.D.A. Market, Pink City, Jaipur, Rajasthan 302002",
+        "description":"At first glance, Jantar Mantar may look to be nothing more than a bunch of larger-than-life abstract sculptures. But this is not an art gallery—it's a special collection of astronomical tools started by Rajput ruler Jai Singh II to measure the heavens nearly 300 years ago. Each of the 20 or so structures at the UNESCO World Heritage Site serves a distinctive purpose. The observatory's massive sun dial, known as Samrat Yantra, is particularly striking. At 27 meters tall, it casts a huge shadow that accurately measures time down to two seconds.",
+        "imageName":"jantar-mantar"
+      },
+      {
+        "placeType": "Historical Place",
+        "placeName":"Hawa Mahal",
+        "address": "Hawa Mahal Rd, Badi Choupad, J.D.A. Market, Pink City, Jaipur, Rajasthan 302002",
+        "description":"If you had any preconceived notions about how the buildings in Jaipur look, they probably came from Hawa Mahal (Palace of Breeze). It has all of the distinctive architectural features that appear in postcards of the city, from the salmon-pink, honeycombed facade, built to resemble the crown of Hindu god Krishna, to the geometric accents and rows of tiny windows. The landmark was built in 1799 to allow royal ladies to watch festivals on the street without being seen by the public. Its 953 windows allow plenty of breeze to pass through, making it an ideal summer palace.",
+        "imageName":"hawa-mahal"
+      },
+      {
+        "placeType": "Historical Place",
+        "placeName":"Amber Fort",
+        "address": "Devisinghpura, Amer, Jaipur, Rajasthan 302001",
+        "description":"Jaipur is home to one of India's most-visited forts: Amber Fort. Built in the year 1592, the sandstone and marble monolith stands atop a small hill roughly 20 minute's driving distance northeast of the center of Jaipur. It's best known for being a pristine example of Rajasthani architecture. Getting to Amber Fort typically involves a short uphill hike that's well worth the effort. It's decked out with intricate patterns of inlaid marble in nearly every color of the rainbow. The fort is laid out into four separate sections, each of which has a spectacular garden courtyard outside. While you'd never know it from above, you can actually explore the fort's underground tunnels, some of which have been restored.",
+        "imageName":"amber-fort"
+      },
+      {
+        "placeType": "Food Point",
+        "placeName":"Chawla's and Nand's",
+        "address": "Fashion Street, Raja Park,Jaipur",
+        "description":"Who doesn't love Golgappa? The spicy wonder also known as puchka and paani-puri are something out of this world and everyone's (well almost) favourite dish. The best place to eat golgappa in Jaipur is the Nand and Chawla's. These are actually two competitor stalls that stand to each other on Fashion Street and are thronged by people. You can choose from a variety of spicy, sweet and tangy chutneys and gorge your way through these custom-made wonders. Try the golgappas at both the stalls and decide for yourself which one's actually the best!",
+        "imageName":"chawla's-and-nand's"
+      },
+      {
+        "placeType": "Food Point",
+        "placeName":"Rawat Mishthan Bhandar",
+        "address": "Station Rd, in front of Polo Victory Hotel, Sindhi Camp, Jaipur, Rajasthan 302001",
+        "description":"Pyaaz Kachori is a must-try when it comes to things to eat in Jaipur. Once you taste these high-on-calorie-but-even-higher-on-taste kachoris you won't be able to stop eating it. The most known place in Jaipur for this delectable item is Rawat Mishthan Bhandar. This is actually a restaurant but is more popular as a mithai shop. Apart from serving the pyaaz-kachori, they have almost 50 other varieties of sweets. You can also try the samosa, mirchi-vada, aloo bonda, dal kachori and every other thing that is basically a nightmare for people on a diet. Be assured you won't regret savouring these spicy Rajasthani dishes",
+        "imageName":"rawat-misthan-bhandar"
+      },
+      {
+        "placeType": "Tea Point",
+        "placeName":"Gulab Ji Chaiwala",
+        "address": "Opposite Ganpati Plaza, MI Road, Jaipur 302001",
+        "description":"If you are a tea-lover this place should be a must and on top of your list. Situated opposite Ganpati Plaza this place is renowned for their masala chai and bun-muska. The hot chai high served with the bun-muska is sure to make every tea-lover sing praises for this place. You can also try the bun-samosa which a speciality of this place and is a craze among the locals. It is always packed and you will find people sipping chai and gossiping their heart out here. Be sure to visit this place the next time you are in town. P.S. - This place closes down at 6 PM so make sure to visit it earlier!",
+        "imageName":"rawat-misthan-bhandar"
+      }
+    ],
+    "personList": [
+      {
+        "personFirstName": "Rajeev",
+        "personLastName": "Khandelwal",
+        "dob": "1975-10-16",
+        "age": 45,
+        "profession": "Actor",
+        "description": "Rajeev Khandelwal is a famous reputed actor in the soap opera’s and now can be seen on the screen of the Bollywood as well. Rajeev was born in mansarowar, which is the largest colony in jaipur. He helped to carry out the culture of rajasthan by his simplicity and dedication towards his work.",
+        "imageName": "rajeev-khandelwal"
+      },
+      {
+        "personFirstName": "Juhi",
+        "personLastName": "Parmar",
+        "dob": "1980-12-14",
+        "age": 40,
+        "profession": "Actress",
+        "description": "Juhi Parmar is famous for the versatility in anchoring, acting, television presenter, singing and dancing. She was bought up in Jaipur and famous for her clear heart and pilon nature which reflects the purity of her heart.",
+        "imageName": "https://res.cloudinary.com/ksush/image/upload/v1610801109/undefined_zjq3dn.jpg"
+      },
+      {
+        "personFirstName": "Vasundra",
+        "personLastName": "Raje",
+        "dob": "1953-03-08",
+        "age": 67,
+        "profession": "Politician",
+        "description": "She was the first woman chief minister of Rajasthan til 2008 and held a variety of changes in the state rajasthan which led to the progress of lower middle class and poor people in the state. Her strong focus and smart work lead her to the title of woth respect.",
+        "imageName": "vasundra-raje"
+      }
+    ]
+  },
+  {
+
+    "cityName": "Abohar",
+    "weatherConditions": "Cold",
+    "population":212000,
+    "geoLocation": "30.1469° N, 74.2008° E",
+    "history": "Abohar is a historical city which is located on the inter-state boundary of the country. It may be called trinity of the culture, ethnicity, and civilization of Punjab, Haryana and Rajasthan. Its boundaries touch Rajasthan's mounds on one side and planes of Haryana on the other. And Village Panjkosi is Famous Village.",
+    "fairList":[
+      {
+        "fairName": "Panj Peer Mela",
+        "fairType": "Religious",
+        "description": "The Panjpeer (literally: five peers) shrine in Abohar, Punjab, India is a dargah dedicated to the five peers who are said in local legends to have destroyed the ancient city of Abunagar that formerly occupied the place now known as Abohar. The shrine is considered holy by members of various religions.",
+        "imageName": "panj-peer"
+
+    }
+    ],
+    "personList": [{
+      "personFirstName": "Sunil",
+      "personLastName": "Jakhar",
+      "dob": "1980-07-03",
+      "age": 0,
+      "profession": "Politician",
+      "description": "Is an Indian Politician and President of Punjab Pradesh Congress Committee. Elected consecutively three times from Abohar constituency (2002-2017), he was a Leader of opposition in Punjab Vidhan Sabha from 2012-2017. He is a member of the Indian National Congress(INC). He was elected from Gurdaspur, Punjab to the Lok Sabha the lower house of Indian parliament in a by-election",
+      "imageName": "sunil-jakhar"
+    },
+      {
+        "personFirstName": "Amberdeep",
+        "personLastName": "Singh",
+        "dob": "1980-12-13",
+        "age": 0,
+        "profession": "Politician",
+        "description": "Amberdeep Singh is a well known Indian Screenplay Writer, Director, Dialogue Writer, and Actor. He is known for his work in Punjabi film industry. He went to Senior Secondary School, Abohar, Punjab for his schooling and then attended DAV College, Abohar, Punjab and Punjabi University, Patiala for his further education. He has completed his degree in Bachelor of Commerce and Masters in Theatre and Television. He was interested in writing since childhood. His father was a journalist which made writing attractive for him. He likes wrestling and used to take part in wrestling competitions during school days, but he left it due to injuries. He shifted to Mumbai for perceiving his film career.",
+        "imageName": "amberdeep-singh"
+      },
+      {
+        "personFirstName": "Tanya",
+        "personLastName": "Abrol",
+        "dob": "1986-01-08",
+        "age": 0,
+        "profession": "Actress",
+        "description": "Tanya Abrol was born on January 8, 1986 in Abohar, Punjab, India. She is an actress, known for Chak De! India (2007), Love Yoou Soniye (2013) and C.I.D. (1998).",
+        "imageName": "amberdeep-singh"
+      }],
+    "fairList": [
+      {
+        "fairName": "Nakodar Mela",
+        "fairType": "Religious",
+        "description": "The dargah of Baba Murad Shah ji after the death of Sai Laddi Shah Ji was offered to the famous Punjabi singer, Mr. Gurdas Maan Ji who has remained as a sewadaar. Various singers perform at this powerful place and also there is a mela (fair) celebrated regularly in Memory of Baba Murad Shah Ji and Sai Ghulam (Laddi) Shah Ji",
+        "imageName": "nakodar-mela"
+      },
+      {
+        "fairName": "Nakodar Mela",
+        "fairType": "Religious",
+        "description": "The dargah of Baba Murad Shah ji after the death of Sai Laddi Shah Ji was offered to the famous Punjabi singer, Mr. Gurdas Maan Ji who has remained as a sewadaar. Various singers perform at this powerful place and also there is a mela (fair) celebrated regularly in Memory of Baba Murad Shah Ji and Sai Ghulam (Laddi) Shah Ji",
+        "imageName": "nakodar-mela"
+      }
+    ]
+  },
+  {
+    "cityName": "Mumbai",
+    "weatherConditions": "Hot",
+    "population":18212000,
+    "geoLocation": "19.0760° N, 72.8777° E",
+    "history": "Human habitation of Mumbai existed since the Stone Age, the Kolis and Aagri (a Marathi fishing community[1]) were the earliest known settlers of the islands. The Maurya Empire gained control of the islands during the 3rd century BCE and transformed it into a centre of Buddhist culture and religion. Later, between the 2nd century BCE and 9th century CE, the islands came under the control of successive indigenous dynasties: Satavahanas, Abhiras, Vakatakas, Kalachuris, Konkan Mauryas, Chalukyas and Rashtrakutas, before being ruled by the Silharas from 810 to 1260.",
+    "personList": [
+      {
+        "personFirstName": "Rakesh ",
+        "personLastName": "Jhunjhunwala",
+        "dob": "1960-07-05",
+        "age": 0,
+        "profession": "Bussiness Man",
+        "description": "Rakesh Jhunjhunwala (born 5 July 1960) is a Bussiness Magnate. He manages his own portfolio as a partner in his asset management firm, Rare Enterprises.He is the 39th richest person in India, with net worth of $2.9 billion (as of 29 September 2020).",
+        "imageName": "https://res.cloudinary.com/ksush/image/upload/v1610793332/rakesh-jhunjhunwala-1_kwvtyi.jpg"
+      },
+      {
+        "personFirstName": "DadaBhai",
+        "personLastName": "Naoroji",
+        "dob": "1825-06-30",
+        "age": 0,
+        "profession": "Politician",
+        "description": "Dadabhai Naoroji (4 September 1825 – 30 June 1917) also known as the Grand Old Man of India and Unofficial Ambassador of India was an Indian scholar, trader, and politician who was a Liberal Party member of Parliament (MP) in the United Kingdom House of Commons between 1892 and 1895 and the first Asian to be a British MP[1][2] other than the Anglo-Indian MP David Ochterlony Dyce Sombre, who was disenfranchised for corruption after nine months in office. Naoroji is renowned for his work in the Indian National Congress, of which he was one of the founding members and thrice -- in 1886, 1893, and 1906 -- elected president",
+        "imageName": "https://res.cloudinary.com/ksush/image/upload/v1610793361/dadabhai-naoroji-1_ixf4jk.jpg"
+      },
+      {
+        "personFirstName": "Homi",
+        "personLastName": "Bhabha",
+        "dob": "1909-10-30",
+        "age": 0,
+        "profession": "Physicist",
+        "description": "Homi Jehangir Bhabha (30 October 1909 – 24 January 1966) was an Indian nuclear physicist, founding director, and professor of physics at the Tata Institute of Fundamental Research (TIFR).[2] Colloquially known as \"father of the Indian nuclear programme\",[3] Bhabha was also the founding director of the Atomic Energy Establishment, Trombay (AEET) which is now named the Bhabha Atomic Research Centre in his honour. TIFR and AEET were the cornerstone of Indian development of nuclear weapons which Bhabha also supervised as director.",
+        "imageName": "https://res.cloudinary.com/ksush/image/upload/v1610793417/homi-bhabha-2_d7vmv6.jpg"
+      },
+      {
+        "personFirstName": "Ratan",
+        "personLastName": "Tata",
+        "dob": "1937-12-28",
+        "age": 0,
+        "profession": "Industrialist",
+        "description": "Ratan Naval Tata (born 28 December 1937) is an Indian industrialist, philanthropist, and a former chairman of Tata Sons. He was also chairman of Tata Group, from 1990 to 2012, and again, as interim chairman, from October 2016 through February 2017, and continues to head its charitable trusts.[3][4] He is the recipient of two of the highest civilian awards of India, the Padma Vibhushan (2008) and Padma Bhushan (2000).[5] He is well known for his business ethics and philanthropy",
+        "imageName": "https://res.cloudinary.com/ksush/image/upload/v1610793428/Capture_35_fqsj6x.jpg"
+      }
+    ],
+    "placeList": [
+      {
+        "placeType": "Beach",
+        "placeName":"Juhu Beach",
+        "address": "Juhu, Mumbai, Maharashtra 400049",
+        "description":"Nothing can be more romantic than watching the crimson sun and the luminous orange sky on a breezy beach. Juhu Beach is one such spectacular place in Mumbai, often visited by couples who need a little romantic escape from the humdrum of city life",
+        "imageName":"https://res.cloudinary.com/ksush/image/upload/v1610793525/Juhu-Beach_pdg8hz.jpg"
+      },
+      {
+        "placeType": "Aquarium",
+        "placeName":"Taraporewala Aquarium",
+        "address": "Netaji Subhash Chandra Bose Road, Marine Drive, near Charni Road, Railway Station, Mumbai, Maharashtra 400002",
+        "description":"Touted as India’s oldest aquarium, this place houses a variety of marine and freshwater fishes including coral fishes from the Lakshadweep Islands. It also has an Oceanarium that gives you the feel of walking under the sea with exotic fishes floating above you.",
+        "imageName":"https://res.cloudinary.com/ksush/image/upload/v1610793508/Taraporewala-Aquarium_bp4fuw.jpg"
+      },
+      {
+        "placeType": "Amusement Park",
+        "placeName":"KidZania",
+        "address": "R City Mall, 3rd Floor North Wing, LBS Marg, Amrut Nagar, Ghatkopar West, Mumbai, Maharashtra 400086",
+        "description":"Kidzania is an indoor amusement park made exclusively for kids with a unique concept of role-playing in a real city-like environment. Here, kids are required to perform a ‘job’ as a part of their role-playing and they get paid in the form of kidzo money as an encouragement.",
+        "imageName":"https://res.cloudinary.com/ksush/image/upload/v1610793587/Kidzania_wpqzci.jpg"
+      },
+      {
+        "placeType": "Amusement Park",
+        "placeName":"Elephanta Caves",
+        "address": "7km away from shore of Mumbai",
+        "description":"Take a tour to this UNESCO World Heritage Site in Mumbai and get wonderstruck by the massive rock-cut caves that date back to several centuries. It has five caves dedicated to Hindu god Shiva and two caves depicting Buddhist architectures.",
+        "imageName":"https://res.cloudinary.com/ksush/image/upload/v1610793602/Elephenta-Caves_ksszxx.jpg"
+      }
+    ],
+    "fairList": [
+      {
+        "fairName": "Ganesh Chaturthi",
+        "fairType": "Religious",
+        "description": "Ganesh Chaturthi is the main festival of Mumbai among Hindus in Mumbai. In 1893, freedom fighter Lokmanya Tilak transformed this festival into a public event to gain India’s unity among castes to rebel against the British rule. This week-long festivals has prayers, hymns and performances in almost every lane.",
+        "imageName": "https://res.cloudinary.com/ksush/image/upload/v1610793490/Ganesh-Chaturthi-mumbai_wepdf9.jpg"
+      },
+      {
+        "fairName": "Krishna Janmashtami",
+        "fairType": "Religious",
+        "description": "According to Hindu Mythology, Krishna Janmashtami commemorates the birthday of Lord Krishna. Of all the Hindu festivals here, Mumbai janmashtami festival holds an important place. The ISKCON temple gets festive with prayers until midnight. Children are dressed as Krishna and Radha.",
+        "imageName": "https://res.cloudinary.com/ksush/image/upload/v1610793466/Krishna-Janmashtami-mumbai_nqref3.jpg"
+      },
+      {
+        "fairName": "Kala Ghoda Arts Fest",
+        "fairType": "Cultural Fest",
+        "description":"The Kala Ghoda Arts Festival is a cultural festival, nine days long. The festival commences on the first Saturday of February and closes on the second Sunday in February. It is one of the best upcoming festivals in Mumbai. It is the celebration of various different forms of dance, art, music and theatre.",
+        "imageName": "https://res.cloudinary.com/ksush/image/upload/v1610793459/Artsy-neighborhood-of-Kala-Ghoda-Art-Precinct_hob93o.jpg"
+      },
+      {
+        "fairName": "Golden Citizen Festival",
+        "fairType": "Cultural Fest",
+        "description":"Started in 2012, it aims at ending global poverty and Chris Martin, Coldplay’s lead vocalist is the curator for this massive event. The event has most of who’s who of Bollywood and Hollywood artists like Coldplay, Jay Z, Demi Lovato, and India’s legend A.R.Rahman.",
+        "imageName": "https://res.cloudinary.com/ksush/image/upload/v1610793480/Global-Citizen-Festival-mumbai_wb0e39.jpg"
+      }
+    ]
+  }
+]
