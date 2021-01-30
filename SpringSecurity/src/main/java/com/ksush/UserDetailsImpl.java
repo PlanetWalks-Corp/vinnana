@@ -12,11 +12,13 @@ public class UserDetailsImpl implements UserDetails {
 
 	public UserDetailsImpl(User user) {
 		super();
+		System.out.println("here");
 		this.user = user;
 	}
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
+		System.out.println("here");
 		return Collections.singleton(new SimpleGrantedAuthority(("USER")));
 	}
 
